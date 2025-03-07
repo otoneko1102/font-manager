@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "__MSG_Name__",
+  "version": "1.0.0",
+  "description": "__MSG_Description__",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "icons/16x16.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16x16.png",
+      "48": "icons/48x48.png",
+      "128": "icons/128x128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "fonts/AoboshiOne.ttf",
+        "fonts/BIZUDPGothic.ttf",
+        "fonts/DaysOne.ttf",
+        "fonts/DelaGothicOne.ttf",
+        "fonts/HinaMincho.ttf",
+        "fonts/IBMPlexSans.ttf",
+        "fonts/KaiseiDecol.ttf",
+        "fonts/KaiseiOpti.ttf",
+        "fonts/KiwiMaru.ttf",
+        "fonts/KleeOne.ttf",
+        "fonts/Kosugi.ttf",
+        "fonts/KosugiMaru.ttf",
+        "fonts/MochiyPopOne.ttf",
+        "fonts/MPLUS1p.ttf",
+        "fonts/MPLUSRounded1c.ttf",
+        "fonts/NDot.ttf",
+        "fonts/NotoSans.ttf",
+        "fonts/NotoSerif.ttf",
+        "fonts/Roboto.ttf",
+        "fonts/Rubik.ttf",
+        "fonts/SawarabiGothic.ttf",
+        "fonts/SawarabiMincho.ttf",
+        "fonts/ShipporiMincho.ttf",
+        "fonts/Yomogi.ttf",
+        "fonts/YuseiMagic.ttf",
+        "fonts/ZenKakuGothic.ttf",
+        "fonts/ZenKurenaido.ttf",
+        "fonts/ZenMaruGothic.ttf",
+        "fonts/ZenOldMincho.ttf"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+body {
+  color: #f4f4f4;
+  background-color: #2c2c2c;
+  width: 400px;
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  border-bottom: 2px solid #7300fe;
+  font-size: 14px;
+  padding-bottom: 3px;
+  margin-top: 15px;
+}
+
+h5 {
+  color: #f4f4f4;
+  margin: 5px;
+}
+
+a {
+  color: #7300fe;
+}
+
+select, button, input {
+  margin-top: 10px;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+}
+
+select {
+  background-color: #3c3c3c;
+  color: #f4f4f4;
+  border: 1px solid #7300fe;
+}
+
+button {
+  background-color: #7300fe;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #5700c9;
+}
+
+button:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  background-color: #3c3c3c;
+  border: 1px solid #555555;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  color: #ffffff;
+  background-color: #7300fe;
+  font-weight: bold;
+}
+
+.remove-btn {
+  color: #ffffff;
+  background-color: #ff3333;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
+.remove-btn:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #7300fe;
+}
