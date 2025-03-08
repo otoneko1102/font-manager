@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "字體管理器"
+  },
+  "Description": {
+    "message": "更改所有頁面的字體。"
+  },
+  "CurrentDomain": {
+    "message": "當前網域"
+  },
+  "Add": {
+    "message": "新增至忽略清單"
+  },
+  "Remove": {
+    "message": "從忽略清單中移除"
+  },
+  "Check": {
+    "message": "啟用擴充功能"
+  },
+  "FontSettings": {
+    "message": "字體設定"
+  },
+  "SaveFont": {
+    "message": "儲存"
+  },
+  "ReloadAllTabs": {
+    "message": "重新載入所有分頁"
+  },
+  "Request": {
+    "message": "還有其他字體需求嗎？請在<a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>或<a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>上支持！"
+  },
+  "AddCurrentDomain": {
+    "message": "將當前網域新增至忽略清單"
+  },
+  "AddYourself": {
+    "message": "將自己新增至忽略清單"
+  },
+  "ManualDomain": {
+    "message": "輸入網域"
+  },
+  "Ignored": {
+    "message": "忽略清單"
+  },
+  "ThDomains": {
+    "message": "網域"
+  },
+  "ThDel": {
+    "message": "刪除"
+  }
+}

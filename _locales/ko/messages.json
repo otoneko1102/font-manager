@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "폰트 관리자"
+  },
+  "Description": {
+    "message": "모든 페이지의 폰트를 변경합니다."
+  },
+  "CurrentDomain": {
+    "message": "현재 도메인"
+  },
+  "Add": {
+    "message": "무시 목록에 추가"
+  },
+  "Remove": {
+    "message": "무시 목록에서 제거"
+  },
+  "Check": {
+    "message": "확장 프로그램 활성화"
+  },
+  "FontSettings": {
+    "message": "폰트 설정"
+  },
+  "SaveFont": {
+    "message": "저장"
+  },
+  "ReloadAllTabs": {
+    "message": "모든 탭 새로고침"
+  },
+  "Request": {
+    "message": "다른 폰트 요청이 있나요? <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> 또는 <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>에서 지원해주세요!"
+  },
+  "AddCurrentDomain": {
+    "message": "현재 도메인을 무시 목록에 추가"
+  },
+  "AddYourself": {
+    "message": "본인을 무시 목록에 추가"
+  },
+  "ManualDomain": {
+    "message": "도메인 입력"
+  },
+  "Ignored": {
+    "message": "무시 목록"
+  },
+  "ThDomains": {
+    "message": "도메인"
+  },
+  "ThDel": {
+    "message": "삭제"
+  }
+}

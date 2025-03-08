@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "字体管理器"
+  },
+  "Description": {
+    "message": "更改所有页面的字体。"
+  },
+  "CurrentDomain": {
+    "message": "当前域名"
+  },
+  "Add": {
+    "message": "添加到忽略列表"
+  },
+  "Remove": {
+    "message": "从忽略列表中移除"
+  },
+  "Check": {
+    "message": "启用扩展"
+  },
+  "FontSettings": {
+    "message": "字体设置"
+  },
+  "SaveFont": {
+    "message": "保存"
+  },
+  "ReloadAllTabs": {
+    "message": "重新加载所有标签页"
+  },
+  "Request": {
+    "message": "还有其他字体请求吗？请在<a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>或<a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>上支持！"
+  },
+  "AddCurrentDomain": {
+    "message": "将当前域名添加到忽略列表"
+  },
+  "AddYourself": {
+    "message": "将自己添加到忽略列表"
+  },
+  "ManualDomain": {
+    "message": "输入域名"
+  },
+  "Ignored": {
+    "message": "忽略列表"
+  },
+  "ThDomains": {
+    "message": "域名"
+  },
+  "ThDel": {
+    "message": "删除"
+  }
+}

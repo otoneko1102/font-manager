@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "Менеджер шрифтов"
+  },
+  "Description": {
+    "message": "Изменение шрифта на всех страницах."
+  },
+  "CurrentDomain": {
+    "message": "Текущий домен"
+  },
+  "Add": {
+    "message": "Добавить в список игнорирования"
+  },
+  "Remove": {
+    "message": "Удалить из списка игнорирования"
+  },
+  "Check": {
+    "message": "Включить расширение"
+  },
+  "FontSettings": {
+    "message": "Настройки шрифта"
+  },
+  "SaveFont": {
+    "message": "Сохранить"
+  },
+  "ReloadAllTabs": {
+    "message": "Перезагрузить все вкладки"
+  },
+  "Request": {
+    "message": "Есть другие запросы на шрифты? Поддержите нас на <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> или <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Добавить текущий домен в список игнорирования"
+  },
+  "AddYourself": {
+    "message": "Добавить себя в список игнорирования"
+  },
+  "ManualDomain": {
+    "message": "Введите домен"
+  },
+  "Ignored": {
+    "message": "Список игнорирования"
+  },
+  "ThDomains": {
+    "message": "Домены"
+  },
+  "ThDel": {
+    "message": "Удалить"
+  }
+}

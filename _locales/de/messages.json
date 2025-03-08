@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "Schriftarten-Manager"
+  },
+  "Description": {
+    "message": "Ändere die Schriftart auf allen Seiten."
+  },
+  "CurrentDomain": {
+    "message": "Aktuelle Domain"
+  },
+  "Add": {
+    "message": "Zur Ignorierliste hinzufügen"
+  },
+  "Remove": {
+    "message": "Aus der Ignorierliste entfernen"
+  },
+  "Check": {
+    "message": "Erweiterung aktivieren"
+  },
+  "FontSettings": {
+    "message": "Schriftart-Einstellungen"
+  },
+  "SaveFont": {
+    "message": "Speichern"
+  },
+  "ReloadAllTabs": {
+    "message": "Alle Tabs neu laden"
+  },
+  "Request": {
+    "message": "Hast du weitere Schriftarten-Wünsche? Unterstütze uns auf <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> oder <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Aktuelle Domain zur Ignorierliste hinzufügen"
+  },
+  "AddYourself": {
+    "message": "Dich selbst zur Ignorierliste hinzufügen"
+  },
+  "ManualDomain": {
+    "message": "Domain eingeben"
+  },
+  "Ignored": {
+    "message": "Ignorierliste"
+  },
+  "ThDomains": {
+    "message": "Domains"
+  },
+  "ThDel": {
+    "message": "Löschen"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "Gestore dei caratteri"
+  },
+  "Description": {
+    "message": "Cambia il carattere su tutte le pagine."
+  },
+  "CurrentDomain": {
+    "message": "Dominio attuale"
+  },
+  "Add": {
+    "message": "Aggiungi all'elenco ignorati"
+  },
+  "Remove": {
+    "message": "Rimuovi dall'elenco ignorati"
+  },
+  "Check": {
+    "message": "Abilita estensione"
+  },
+  "FontSettings": {
+    "message": "Impostazioni carattere"
+  },
+  "SaveFont": {
+    "message": "Salva"
+  },
+  "ReloadAllTabs": {
+    "message": "Ricarica tutte le schede"
+  },
+  "Request": {
+    "message": "Hai altre richieste di caratteri? Supportaci su <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> o <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Aggiungi il dominio attuale all'elenco ignorati"
+  },
+  "AddYourself": {
+    "message": "Aggiungi te stesso all'elenco ignorati"
+  },
+  "ManualDomain": {
+    "message": "Inserisci dominio"
+  },
+  "Ignored": {
+    "message": "Elenco ignorati"
+  },
+  "ThDomains": {
+    "message": "Domini"
+  },
+  "ThDel": {
+    "message": "Elimina"
+  }
+}

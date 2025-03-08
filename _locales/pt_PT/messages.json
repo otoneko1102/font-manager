@@ -1,0 +1,50 @@
+{
+  "Name": {
+    "message": "Gestor de Fontes"
+  },
+  "Description": {
+    "message": "Altere o tipo de letra em todas as páginas."
+  },
+  "CurrentDomain": {
+    "message": "Domínio Atual"
+  },
+  "Add": {
+    "message": "Adicionar à lista de ignorados"
+  },
+  "Remove": {
+    "message": "Remover da lista de ignorados"
+  },
+  "Check": {
+    "message": "Ativar extensão"
+  },
+  "FontSettings": {
+    "message": "Definições de fonte"
+  },
+  "SaveFont": {
+    "message": "Guardar"
+  },
+  "ReloadAllTabs": {
+    "message": "Recarregar todos os separadores"
+  },
+  "Request": {
+    "message": "Tem outro pedido de fonte? Apoie-nos no <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> ou no <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Adicionar o domínio atual à lista de ignorados"
+  },
+  "AddYourself": {
+    "message": "Adicionar-se à lista de ignorados"
+  },
+  "ManualDomain": {
+    "message": "Introduzir o domínio"
+  },
+  "Ignored": {
+    "message": "Lista de ignorados"
+  },
+  "ThDomains": {
+    "message": "Domínios"
+  },
+  "ThDel": {
+    "message": "Eliminar"
+  }
+}
