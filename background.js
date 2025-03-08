@@ -1,13 +1,11 @@
 chrome.runtime.onInstalled.addListener((details) => {
   if (details.reason === "install") {
-    chrome.tabs.create({ url: "https://github.com/otoneko1102/font-manager#readme" });
+    chrome.tabs.create({ url: `https://font-manager.commonjs.work/${chrome.i18n.getMessage('Index')}.html` });
   }
 
-  /* 将来の変更用: 予約
   if (details.reason === "update") {
-    chrome.tabs.create({ url: "https://github.com/otoneko1102/font-manager#readme" });
+    chrome.tabs.create({ url: `https://font-manager.commonjs.work/${chrome.i18n.getMessage('Index')}.html` });
   }
-  */
 });
 
 chrome.storage.onChanged.addListener((changes, namespace) => {

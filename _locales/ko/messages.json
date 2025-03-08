@@ -5,6 +5,9 @@
   "Description": {
     "message": "모든 페이지의 폰트를 변경합니다."
   },
+  "Index": {
+    "message": "ko"
+  },
   "CurrentDomain": {
     "message": "현재 도메인"
   },

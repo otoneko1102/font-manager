@@ -5,6 +5,9 @@
   "Description": {
     "message": "更改所有頁面的字體。"
   },
+  "Index": {
+    "message": "zh_TW"
+  },
   "CurrentDomain": {
     "message": "當前網域"
   },

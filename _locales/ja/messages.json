@@ -5,6 +5,9 @@
   "Description": {
     "message": "すべてのページのフォントを変更します。"
   },
+  "Index": {
+    "message": "ja"
+  },
   "CurrentDomain": {
     "message": "現在のドメイン"
   },

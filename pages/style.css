@@ -1,0 +1,48 @@
+body {
+  color: #f4f4f4;
+  background-color: #2c2c2c;
+  font-family: serif;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: auto 50px;
+  border-bottom: 2px solid #7300fe;
+}
+
+a {
+  color: #7300fe;
+}
+
+#fonts, #languages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 10px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+li {
+  background-color: #444444;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 0.2s;
+  list-style: none;
+}
+
+li:hover {
+  background-color: #7300fe;
+  cursor: pointer;
+}
+
+li a {
+  padding: 20px 60px;
+  color: #ffffff;
+  border: none;
+}

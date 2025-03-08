@@ -5,6 +5,9 @@
   "Description": {
     "message": "Change la police sur toutes les pages."
   },
+  "Index": {
+    "message": "fr"
+  },
   "CurrentDomain": {
     "message": "Domaine actuel"
   },

@@ -5,6 +5,9 @@
   "Description": {
     "message": "Altere o tipo de letra em todas as páginas."
   },
+  "Index": {
+    "message": "pt_PT"
+  },
   "CurrentDomain": {
     "message": "Domínio Atual"
   },

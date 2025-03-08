@@ -5,6 +5,9 @@
   "Description": {
     "message": "Изменение шрифта на всех страницах."
   },
+  "Index": {
+    "message": "ru"
+  },
   "CurrentDomain": {
     "message": "Текущий домен"
   },

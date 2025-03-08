@@ -5,6 +5,9 @@
   "Description": {
     "message": "Ändere die Schriftart auf allen Seiten."
   },
+  "Index": {
+    "message": "de"
+  },
   "CurrentDomain": {
     "message": "Aktuelle Domain"
   },

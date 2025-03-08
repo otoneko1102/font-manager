@@ -5,6 +5,9 @@
   "Description": {
     "message": "Cambia il carattere su tutte le pagine."
   },
+  "Index": {
+    "message": "it"
+  },
   "CurrentDomain": {
     "message": "Dominio attuale"
   },

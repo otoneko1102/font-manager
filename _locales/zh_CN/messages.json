@@ -5,6 +5,9 @@
   "Description": {
     "message": "更改所有页面的字体。"
   },
+  "Index": {
+    "message": "zh_CN"
+  },
   "CurrentDomain": {
     "message": "当前域名"
   },
