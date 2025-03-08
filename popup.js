@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const url = new URL(tab.url);
   let currentDomain = url.hostname.replace(/^www\./, "");
-  domainText.textContent = `Current Domain: ${currentDomain}`;
+  domainText.textContent = `${chrome.i18n.getMessage('CurrentDomain')}: ${currentDomain}`;
 
   chrome.storage.local.get("extensionEnabled", (data) => {
     if (data.extensionEnabled === undefined) {
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       ignoredList.appendChild(row);
     });
 
-    toggleBtn.textContent = ignoredDomains.includes(currentDomain) ? "Remove from Ignored List" : "Add to Ignored List";
+    toggleBtn.textContent = ignoredDomains.includes(currentDomain) ? chrome.i18n.getMessage('Remove') : chrome.i18n.getMessage('Add');
   }
 
   chrome.storage.local.get(["selectedFont", "ignoredDomains"], (data) => {

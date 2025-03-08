@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Font Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h3>Font Manager</h3>
+  <h3 id="title">Font Manager</h3>
 
   <label>
     <input type="checkbox" id="toggle-extension">
-    Enable Extension
+    <span id="check"></span>
   </label>
 
-  <h4>Font Settings</h4>
-  <label for="font-select">Select:</label>
+  <h4 id="font-settings">Font Settings</h4>
   <select id="font-select">
     <option disabled>Loading...</option>
   </select>
@@ -22,22 +21,22 @@
 
   <button id="reload-all-tabs">Reload All Tabs</button>
 
-  <h5>Any other font requests? Support on <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> or <a href="https://discord.gg/yKW8wWKCnS" target="_blank">Discord</a>!</h5>
+  <h5 id="request">Any other font requests? Support on <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> or <a href="https://discord.gg/yKW8wWKCnS" target="_blank">Discord</a>!</h5>
 
-  <h4>Add Current Domain to Ignored List</h4>
+  <h4 id="add-current-domain">Add Current Domain to Ignored List</h4>
   <p id="current-domain">Current Domain: Loading...</p>
   <button id="toggle-ignore">Add to Ignored List</button>
 
-  <h4>Add to Ignored List Yourself</h4>
+  <h4 id="add-yourself">Add to Ignored List Yourself</h4>
   <input type="text" id="manual-domain" placeholder="Enter Domain">
-  <button id="add-manual">Add</button>
+  <button id="add-manual">+</button>
 
-  <h4>Ignored List</h4>
+  <h4 id="ignored">Ignored List</h4>
   <table>
     <thead>
       <tr>
-        <th>Domains</th>
-        <th>Del</th>
+        <th id="th-domains">Domains</th>
+        <th id="th-del">Del</th>
       </tr>
       <tr>
         <td>chromewebstore.google.com</td>
@@ -48,6 +47,7 @@
     </tbody>
   </table>
 
+  <script src="language.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

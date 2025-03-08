@@ -4,5 +4,47 @@
   },
   "Description": {
     "message": "Change the font on all pages."
+  },
+  "CurrentDomain": {
+    "message": "Current Domain"
+  },
+  "Add": {
+    "message": "Add to Ignored List"
+  },
+  "Remove": {
+    "message": "Remove from Ignored List"
+  },
+  "Check": {
+    "message": "Enable Extension"
+  },
+  "FontSettings": {
+    "message": "Font Settings"
+  },
+  "SaveFont": {
+    "message": "Save"
+  },
+  "ReloadAllTabs": {
+    "message": "Reload All Tabs"
+  },
+  "Request": {
+    "message": "Any other font requests? Support on <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> or <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Add Current Domain to Ignored List"
+  },
+  "AddYourself": {
+    "message": "Add to Ignored List Yourself"
+  },
+  "ManualDomain": {
+    "message": "Enter Domain"
+  },
+  "Ignored": {
+    "message": "Ignored List"
+  },
+  "ThDomains": {
+    "message": "Domains"
+  },
+  "ThDel": {
+    "message": "Del"
   }
 }

@@ -4,5 +4,47 @@
   },
   "Description": {
     "message": "すべてのページのフォントを変更します。"
+  },
+  "CurrentDomain": {
+    "message": "現在のドメイン"
+  },
+  "Add": {
+    "message": "無視リストに追加"
+  },
+  "Remove": {
+    "message": "無視リストから削除"
+  },
+  "Check": {
+    "message": "拡張機能を有効化"
+  },
+  "FontSettings": {
+    "message": "フォント設定"
+  },
+  "SaveFont": {
+    "message": "保存"
+  },
+  "ReloadAllTabs": {
+    "message": "すべてのタブを更新"
+  },
+  "Request": {
+    "message": "フォントのリクエストはありますか？ <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> または <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a> で対応します！"
+  },
+  "AddCurrentDomain": {
+    "message": "現在のドメインを無視リストに追加"
+  },
+  "AddYourself": {
+    "message": "手動で無視リストに追加"
+  },
+  "ManualDomain": {
+    "message": "ドメインを入力"
+  },
+  "Ignored": {
+    "message": "無視リスト"
+  },
+  "ThDomains": {
+    "message": "ドメイン"
+  },
+  "ThDel": {
+    "message": "削除"
   }
 }

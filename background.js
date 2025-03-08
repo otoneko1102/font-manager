@@ -13,24 +13,17 @@ chrome.runtime.onInstalled.addListener((details) => {
 chrome.storage.onChanged.addListener((changes, namespace) => {
   if (changes.selectedFont || changes.ignoredDomains) {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-      if (chrome.runtime.lastError) {
-        console.error("Error querying tabs:", chrome.runtime.lastError);
-        return;
-      }
-
-      if (!tabs || tabs.length === 0) {
-        console.warn("No active tab found");
-        return;
-      }
+      if (chrome.runtime.lastError) return;
+      if (!tabs || tabs.length === 0) return;
 
       tabs.forEach(tab => {
         if (tab.id !== undefined) {
-          chrome.scripting.executeScript({
-            target: { tabId: tab.id },
-            files: ["content.js"]
-          }).catch(err => console.error("Error executing script:", err));
-        } else {
-          console.warn("Invalid tab ID:", tab);
+          try {
+            chrome.scripting.executeScript({
+              target: { tabId: tab.id },
+              files: ["content.js"]
+            });
+          } catch {}
         }
       });
     });
