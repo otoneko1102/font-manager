@@ -7,19 +7,26 @@
   </head>
   <body>
     <h3 id="title">Font Manager</h3>
-
-    <label>
-      <input type="checkbox" id="toggle-extension">
-      <span id="check">Enable Extension</span>
-    </label>
+    <div class="title-block">
+      <div class="title-block-left">
+        <label>
+          <input type="checkbox" id="toggle-extension">
+          <span id="check">Enable Extension</span>
+        </label>
+        <button id="reload-all-tabs">Reload All Tabs</button>
+      </div>
+      <div class="title-block-right">
+        <a href="https://font-manager.commonjs.work" target="_blank">
+          <img id="icon" src="icons/128x128.png" title="Icon" alt="Icon">
+        </a>
+      </div>
+    </div>
 
     <h4 id="font-settings">Font Settings</h4>
     <select id="font-select">
       <option disabled>Loading...</option>
     </select>
     <button id="save-font">Save</button>
-
-    <button id="reload-all-tabs">Reload All Tabs</button>
 
     <h5 id="request">
       Any other font requests? Support on <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> or <a href="https://discord.gg/yKW8wWKCnS" target="_blank">Discord</a>!

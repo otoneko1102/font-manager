@@ -1,10 +1,32 @@
 body {
+  display: block;
   color: #f4f4f4;
   background-color: #2c2c2c;
   width: 400px;
   font-family: "Arial", sans-serif;
   padding: 10px;
   text-align: center;
+}
+
+.title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title-block-left {
+  padding: 0 40px;
+  text-align: left;
+}
+
+.title-block-right {
+  text-align: right;
+}
+
+.icon {
+  width: 128px;
+  height: 128px;
 }
 
 h3 {
@@ -37,9 +59,14 @@ select, button, input {
 }
 
 select {
+  width: 180px;
   background-color: #3c3c3c;
   color: #f4f4f4;
   border: 1px solid #7300fe;
+}
+
+#save-font {
+  min-width: 70px;
 }
 
 button {
@@ -56,6 +83,14 @@ button:hover {
 button:disabled {
   background-color: #555555;
   cursor: not-allowed;
+}
+
+#reload-all-tabs {
+  min-width: 170px;
+}
+
+#toggle-ignore {
+  min-width: 250px;
 }
 
 table {
@@ -80,8 +115,8 @@ th {
 .remove-btn {
   color: #ffffff;
   background-color: #ff3333;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
   font-size: 10px;
   line-height: 10px;
@@ -104,12 +139,20 @@ label {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   accent-color: #7300fe;
+}
+
+#manual-domain {
+  min-width: 200px;
+}
+
+#add-manual {
+  width: 30px;
 }
