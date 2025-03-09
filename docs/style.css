@@ -8,11 +8,11 @@ body {
 
 h2 {
   margin: auto 50px;
-  border-bottom: 2px solid #7300fe;
+  border-bottom: 2px solid #0e016d;
 }
 
 a {
-  color: #7300fe;
+  color: #0e016d;
 }
 
 #fonts, #languages {
@@ -37,7 +37,7 @@ li {
 }
 
 li:hover {
-  background-color: #7300fe;
+  background-color: #0e016d;
   cursor: pointer;
 }
 

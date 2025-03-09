@@ -35,7 +35,7 @@ h3 {
 }
 
 h4 {
-  border-bottom: 2px solid #7300fe;
+  border-bottom: 2px solid #0e016d;
   font-size: 14px;
   padding-bottom: 3px;
   margin-top: 15px;
@@ -47,7 +47,7 @@ h5 {
 }
 
 a {
-  color: #7300fe;
+  color: #0e016d;
 }
 
 select, button, input {
@@ -62,7 +62,7 @@ select {
   width: 180px;
   background-color: #3c3c3c;
   color: #f4f4f4;
-  border: 1px solid #7300fe;
+  border: 1px solid #0e016d;
 }
 
 #save-font {
@@ -70,7 +70,7 @@ select {
 }
 
 button {
-  background-color: #7300fe;
+  background-color: #0e016d;
   color: #ffffff;
   cursor: pointer;
   transition: 0.2s;
@@ -108,7 +108,7 @@ th, td {
 
 th {
   color: #ffffff;
-  background-color: #7300fe;
+  background-color: #0e016d;
   font-weight: bold;
 }
 
@@ -146,7 +146,7 @@ label {
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  accent-color: #7300fe;
+  accent-color: #0e016d;
 }
 
 #manual-domain {
