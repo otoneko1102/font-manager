@@ -13,16 +13,23 @@
 
   - AoboshiOne  
   - BIZUDPGothic  
+  - Consolas  
   - DaysOne  
+  - DejaVuSans  
+  - DejaVuSansMono  
+  - DejaVuSerif  
   - DelaGothicOne  
-  - DotGothic16
+  - DotGothic16  
+  - FiraCode  
   - HinaMincho  
   - Iansui  
   - IBMPlexSans  
-  - IrohakakuC
+  - IrohakakuC  
+  - JetBrainsMono  
   - KaiseiDecol  
   - KaiseiOpti  
   - Keifont  
+  - KillGothicU  
   - KiwiMaru  
   - KleeOne  
   - Koruri  
@@ -46,7 +53,9 @@
   - SawarabiGothic  
   - SawarabiMincho  
   - ShipporiMincho  
+  - SourceCodePro  
   - TsukuhouGothic  
+  - UDEVGothic  
   - Yomogi  
   - YuseiMagic  
   - ZenKakuGothic  
@@ -72,6 +81,13 @@
   拡張機能に搭載するフォントを募集中です。提案はGithubまたはDiscordで受け付けています。もし、あなたが好んで使うフォントが搭載されていない場合は問い合わせてみてください！対応します！
 </details>
 <details>
+  <summary>한국어</summary>
+  모든 페이지의 폰트를 변경하세요.<br>
+  확장 프로그램에 포함된 폰트를 선택하고 활성화하면 모든 페이지에서 해당 폰트를 사용할 수 있습니다.<br>
+  익숙한 폰트를 사용하면 인터넷 서핑이 더욱 편안해집니다.<br>
+  현재 확장 프로그램에서 사용할 폰트를 찾고 있습니다. GitHub 또는 Discord에서 제안을 받고 있으니, 원하는 폰트가 없다면 언제든지 문의해주세요! 빠르게 답변해 드리겠습니다!
+</details>
+<details>
   <summary>简体中文</summary>
   更改所有页面的字体。<br>
   通过选择并启用扩展程序中包含的字体，您可以在所有页面上使用该字体。<br>
@@ -84,13 +100,6 @@
   透過選擇並啟用擴充功能內包含的字體，您可以在所有頁面上使用該字體。<br>
   使用熟悉的字體能讓您的網頁瀏覽體驗更加舒適。<br>
   我們正在尋找適合擴充功能的字體，歡迎在 GitHub 或 Discord 上提出建議。如果您找不到喜歡的字體，請聯繫我們！我們會回覆您！
-</details>
-<details>
-  <summary>한국어</summary>
-  모든 페이지의 폰트를 변경하세요.<br>
-  확장 프로그램에 포함된 폰트를 선택하고 활성화하면 모든 페이지에서 해당 폰트를 사용할 수 있습니다.<br>
-  익숙한 폰트를 사용하면 인터넷 서핑이 더욱 편안해집니다.<br>
-  현재 확장 프로그램에서 사용할 폰트를 찾고 있습니다. GitHub 또는 Discord에서 제안을 받고 있으니, 원하는 폰트가 없다면 언제든지 문의해주세요! 빠르게 답변해 드리겠습니다!
 </details>
 
 <div style="text-align: center;">
