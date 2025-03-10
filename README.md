@@ -54,6 +54,7 @@
   - SawarabiGothic  
   - SawarabiMincho  
   - ShipporiMincho  
+  - Slackside80Pop  
   - SlacksideOne  
   - SourceCodePro  
   - TsukuhouGothic  
