@@ -21,6 +21,7 @@
   - DelaGothicOne  
   - DotGothic16  
   - FiraCode  
+  - HachiMaruPop  
   - HinaMincho  
   - Iansui  
   - IBMPlexSans  
@@ -53,6 +54,7 @@
   - SawarabiGothic  
   - SawarabiMincho  
   - ShipporiMincho  
+  - SlacksideOne  
   - SourceCodePro  
   - TsukuhouGothic  
   - UDEVGothic  
