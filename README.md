@@ -114,7 +114,7 @@
 <a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home" style="display: block; width: auto; height: 100px;"/></a>
 
 ### Download
-- ~~Chrome Webstore~~
+- [Chrome Webstore](https://chromewebstore.google.com/detail/mgpehaaemcemgmipcaaclkkmhgllchho)
 - [GitHub Releases](https://github.com/otoneko1102/font-manager/releases)
 
 ## Get Support
