@@ -21,6 +21,7 @@
   - DelaGothicOne  
   - DotGothic16  
   - FiraCode  
+  - Fotbidden  
   - HachiMaruPop  
   - HinaMincho  
   - Iansui  

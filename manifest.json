@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "default_locale": "en",
   "name": "__MSG_Name__",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "__MSG_Description__",
   "permissions": [
     "storage",
@@ -45,6 +45,7 @@
         "fonts/DelaGothicOne.ttf",
         "fonts/DotGothic16.ttf",
         "fonts/FiraCode.ttf",
+        "fonts/Forbidden.ttf",
         "fonts/HachiMaruPop.ttf",
         "fonts/HinaMincho.ttf",
         "fonts/Iansui.ttf",
