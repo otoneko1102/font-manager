@@ -8,66 +8,7 @@
 > Other than English and Japanese, some translations may be incorrect as Google Translate or ChatGPT are used. For correction requests, visit [Issues](https://github.com/otoneko1102/font-manager/issues).
 
 ## Supported Fonts
-<details>
-  <summary>Click to expand</summary>
-
-  - AoboshiOne  
-  - BIZUDPGothic  
-  - Consolas  
-  - DaysOne  
-  - DejaVuSans  
-  - DejaVuSansMono  
-  - DejaVuSerif  
-  - DelaGothicOne  
-  - DotGothic16  
-  - FiraCode  
-  - Fotbidden  
-  - HachiMaruPop  
-  - HinaMincho  
-  - Iansui  
-  - IBMPlexSans  
-  - IrohakakuC  
-  - JetBrainsMono  
-  - KaiseiDecol  
-  - KaiseiOpti  
-  - Keifont  
-  - KillGothicU  
-  - KiwiMaru  
-  - KleeOne  
-  - Koruri  
-  - Kosugi  
-  - KosugiMaru  
-  - Mejiro  
-  - MochiyPopOne  
-  - MPLUS1p  
-  - MPLUSRounded1c  
-  - NDot  
-  - NotoSans  
-  - NotoSerif  
-  - OpenSans  
-  - Roboto  
-  - RobotoCondensed  
-  - RobotoFlex  
-  - RobotoMono  
-  - RobotoSerif  
-  - RobotoSlab  
-  - Rubik  
-  - SawarabiGothic  
-  - SawarabiMincho  
-  - ShipporiMincho  
-  - Slackside80Pop  
-  - SlacksideOne  
-  - SourceCodePro  
-  - TsukuhouGothic  
-  - UDEVGothic  
-  - Yomogi  
-  - YuseiMagic  
-  - ZenKakuGothic  
-  - ZenKurenaido  
-  - ZenMaruGothic  
-  - ZenOldMincho  
-</details>
-
+Please check at [Official Website](https://font-manager.commonjs.work/)
 
 ## Description
 <details>
