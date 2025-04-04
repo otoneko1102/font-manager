@@ -176,7 +176,22 @@ document.addEventListener("DOMContentLoaded", async () => {
         chrome.storage.local.set({ ignoredDomains: updatedDomains }, () => {
           updateIgnoredList(updatedDomains);
 
-          if (ignoredDomain === currentDomain) {
+          if (
+            ignoredDomain === currentDomain ||
+            (
+              ignoredDomain.startsWith("*.") &&
+              `.${currentDomain}`.endsWith(ignoredDomain.replace("*", ""))
+            ) ||
+            (
+              ignoredDomain.endsWith(".*") &&
+              `${currentDomain}.`.startsWith(ignoredDomain.replace("*", ""))
+            ) ||
+            (
+              ignoredDomain.startsWith("*.") &&
+              ignoredDomain.endsWith(".*") &&
+              `.${currentDomain}.`.includes(ignoredDomain.replace(/\*/g, ""))
+            )
+          ) {
             reloadCurrentTab();
           }
         });
@@ -216,7 +231,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   function addManualDomain() {
-    let manualDomain = manualInput.value.trim();
+    let manualDomain = manualInput.value
+      .trim()
+      .replace(/https?:\/\//, "")
+      .replace(/^www\./, "")
+      .replace(/\/.*/, "");
     if (!manualDomain) return;
 
     const punycodePattern = /\bxn--/i;

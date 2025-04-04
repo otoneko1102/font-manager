@@ -61,7 +61,7 @@ chrome.storage.local.get(["extensionEnabled", "ignoredDomains", "selectedFont"],
   const ignoredDomains = data.ignoredDomains || [];
   const selectedFont = data.selectedFont || "NotoSans.ttf";
   let currentDomain = window.location.hostname.replace(/^www\./, "");
-  
+
   const punycodePattern = /\bxn--/i;
   if (punycodePattern.test(currentDomain)) {
     currentDomain = currentDomain
@@ -70,8 +70,25 @@ chrome.storage.local.get(["extensionEnabled", "ignoredDomains", "selectedFont"],
       .join('.');
   }
 
-  if (ignoredDomains.some(domain => domain === currentDomain)) {
-    console.log(`Font is disabled for ${currentDomain} (Ignored List Match)`);
+  if (
+    ignoredDomains.some(
+      domain => domain === currentDomain ||
+      (
+        domain.startsWith("*.") &&
+        `.${currentDomain}`.endsWith(domain.replace("*", ""))
+      ) ||
+      (
+        domain.endsWith(".*") &&
+        `${currentDomain}.`.startsWith(domain.replace("*", ""))
+      ) ||
+      (
+        domain.startsWith("*.") &&
+        domain.endsWith(".*") &&
+        `.${currentDomain}.`.includes(domain.replace(/\*/g, ""))
+      )
+    )
+  ) {
+    console.log(`Font Manager is disabled for ${currentDomain} (Ignored List Match)`);
     return;
   }
 
