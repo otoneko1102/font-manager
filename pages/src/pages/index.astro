@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import { indexStrings, languageLinks } from "../i18n/translations";
 
-const featureIcons = ["🔤", "📤", "🌐", "🔄"];
+const featureIcons = ["lucide:type", "lucide:upload", "lucide:refresh-cw"];
 ---
 
 <Layout lang={indexStrings.lang} title={indexStrings.title}>
@@ -61,7 +61,7 @@ const featureIcons = ["🔤", "📤", "🌐", "🔄"];
         {
           indexStrings.features.map((feat, i) => (
             <div class="feature-card">
-              <div class="feature-icon">{featureIcons[i]}</div>
+              <div class="feature-icon"><Icon name={featureIcons[i]} width="28" height="28" /></div>
               <p>{feat}</p>
             </div>
           ))

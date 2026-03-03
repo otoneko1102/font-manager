@@ -183,9 +183,8 @@ export const indexStrings: IndexStrings = {
   installFromStore: "Install from Chrome Web Store",
   heroTagline: "Transform your browsing experience with beautiful fonts",
   features: [
-    "60+ built-in fonts",
-    "Custom font upload",
-    "Per-site font control",
+    "Built-in fonts",
+    "Custom fonts",
     "Auto updates",
   ],
 };
@@ -194,7 +193,7 @@ export const locales: Record<string, LocaleStrings> = {
   en: {
     lang: "en",
     title: "Font Manager",
-    heading: "Thank you for installing Font Manager!",
+    heading: "Thank you for installing!",
     serifTest:
       "The original font for this page is 'serif'. If it is displayed in a different font, the extension is working fine!",
     notWorking: "If it's not working, check 'Enable Extension'.",
@@ -204,9 +203,8 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "View All Fonts →",
     installFromStore: "Install from Chrome Web Store",
     features: [
-      "60+ built-in fonts",
-      "Custom font upload",
-      "Per-site font control",
+      "Built-in fonts",
+      "Custom fonts",
       "Auto updates",
     ],
   },
@@ -214,7 +212,7 @@ export const locales: Record<string, LocaleStrings> = {
     lang: "ja",
     title: "フォントマネージャー",
     heading:
-      "フォントマネージャーをインストールしていただきありがとうございます！",
+      "インストールしていただきありがとうございます！",
     serifTest:
       "このページの元のフォントは 'serif' です。異なるフォントで表示されていれば、拡張機能は正常に動作しています！",
     notWorking:
@@ -225,16 +223,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "全フォント一覧を見る →",
     installFromStore: "Chrome ウェブストアからインストール",
     features: [
-      "60以上の内蔵フォント",
-      "カスタムフォントアップロード",
-      "サイトごとのフォント設定",
+      "内蔵フォント",
+      "カスタムフォント",
       "自動アップデート",
     ],
   },
   ca: {
     lang: "ca",
     title: "Gestor de Tipografies",
-    heading: "Gràcies per instal·lar el Gestor de Tipografies!",
+    heading: "Gràcies per instal·lar-lo!",
     serifTest:
       "La tipografia original d'aquesta pàgina és 'serif'. Si es mostra d'una manera diferent, vol dir que l'extensió funciona correctament!",
     notWorking: "Si no funciona, comproveu si l'extensió està activada.",
@@ -244,16 +241,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Veure totes les tipografies →",
     installFromStore: "Instal·la des de Chrome Web Store",
     features: [
-      "Més de 60 tipografies integrades",
-      "Càrrega de tipografies personalitzades",
-      "Control de tipografies per lloc",
+      "Tipografies integrades",
+      "Tipografies personalitzades",
       "Actualitzacions automàtiques",
     ],
   },
   de: {
     lang: "de",
     title: "Schriftarten-Manager",
-    heading: "Vielen Dank für die Installation des Schriftarten-Manager!",
+    heading: "Vielen Dank für die Installation!",
     serifTest:
       "Die ursprüngliche Schriftart dieser Seite ist 'serif'. Wenn sie anders angezeigt wird, funktioniert die Erweiterung einwandfrei!",
     notWorking:
@@ -264,16 +260,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Alle Schriftarten anzeigen →",
     installFromStore: "Im Chrome Web Store installieren",
     features: [
-      "Über 60 integrierte Schriftarten",
-      "Benutzerdefinierte Schriftarten hochladen",
-      "Schriftartenkontrolle pro Website",
+      "Integrierte Schriftarten",
+      "Eigene Schriftarten",
       "Automatische Updates",
     ],
   },
   es: {
     lang: "es",
     title: "Gestor de Fuentes",
-    heading: "¡Gracias por instalar el Gestor de Fuentes!",
+    heading: "¡Gracias por instalar!",
     serifTest:
       "La fuente original de esta página es 'serif'. Si se muestra de manera diferente, ¡la extensión está funcionando correctamente!",
     notWorking: "Si no funciona, verifica que la extensión esté activada.",
@@ -283,16 +278,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Ver todas las fuentes →",
     installFromStore: "Instalar desde Chrome Web Store",
     features: [
-      "Más de 60 fuentes integradas",
-      "Carga de fuentes personalizadas",
-      "Control de fuentes por sitio",
+      "Fuentes integradas",
+      "Fuentes personalizadas",
       "Actualizaciones automáticas",
     ],
   },
   fr: {
     lang: "fr",
     title: "Gestionnaire de polices",
-    heading: "Merci d'avoir installé le Gestionnaire de polices !",
+    heading: "Merci pour l’installation !",
     serifTest:
       "La police d'origine de cette page est 'serif'. Si elle s'affiche différemment, cela signifie que l'extension fonctionne correctement !",
     notWorking:
@@ -303,16 +297,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Voir toutes les polices →",
     installFromStore: "Installer depuis le Chrome Web Store",
     features: [
-      "Plus de 60 polices intégrées",
-      "Téléchargement de polices personnalisées",
-      "Contrôle des polices par site",
+      "Polices intégrées",
+      "Polices personnalisées",
       "Mises à jour automatiques",
     ],
   },
   it: {
     lang: "it",
     title: "Gestore dei caratteri",
-    heading: "Grazie per aver installato il Gestore dei caratteri!",
+    heading: "Grazie per l'installazione!",
     serifTest:
       "Il carattere originale di questa pagina è 'serif'. Se viene visualizzato in modo diverso, significa che l'estensione funziona correttamente!",
     notWorking: "Se non funziona, verifica che l'estensione sia attivata.",
@@ -322,16 +315,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Vedi tutti i caratteri →",
     installFromStore: "Installa dal Chrome Web Store",
     features: [
-      "Oltre 60 caratteri integrati",
-      "Caricamento caratteri personalizzati",
-      "Controllo caratteri per sito",
+      "Caratteri integrati",
+      "Caratteri personalizzati",
       "Aggiornamenti automatici",
     ],
   },
   ko: {
     lang: "ko",
     title: "폰트 관리자",
-    heading: "폰트 관리자를 설치해 주셔서 감사합니다!",
+    heading: "설치해 주셔서 감사합니다!",
     serifTest:
       "이 페이지의 기본 글꼴은 'serif'입니다. 다른 글꼴로 표시되면 확장 프로그램이 정상적으로 작동하는 것입니다!",
     notWorking: "작동하지 않는 경우 '확장 프로그램 활성화'를 확인하세요.",
@@ -341,16 +333,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "전체 글꼴 보기 →",
     installFromStore: "Chrome 웹 스토어에서 설치",
     features: [
-      "60개 이상의 기본 글꼴",
-      "맞춤 글꼴 업로드",
-      "사이트별 글꼴 제어",
+      "기본 글꼴",
+      "맞춤 글꼴",
       "자동 업데이트",
     ],
   },
   pt_BR: {
     lang: "pt-BR",
     title: "Gerenciador de Fontes",
-    heading: "Obrigado por instalar o Gerenciador de Fontes!",
+    heading: "Obrigado por instalar!",
     serifTest:
       "A fonte original desta página é 'serif'. Se estiver sendo exibida de forma diferente, significa que a extensão está funcionando corretamente!",
     notWorking:
@@ -361,16 +352,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Ver todas as fontes →",
     installFromStore: "Instalar da Chrome Web Store",
     features: [
-      "Mais de 60 fontes integradas",
-      "Upload de fontes personalizadas",
-      "Controle de fontes por site",
+      "Fontes integradas",
+      "Fontes personalizadas",
       "Atualizações automáticas",
     ],
   },
   pt_PT: {
     lang: "pt-PT",
     title: "Gestor de Fontes",
-    heading: "Obrigado por instalar o Gestor de Fontes!",
+    heading: "Obrigado por instalar!",
     serifTest:
       "A fonte original desta página é 'serif'. Se for exibida de forma diferente, significa que a extensão está a funcionar corretamente!",
     notWorking:
@@ -381,16 +371,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Ver todas as fontes →",
     installFromStore: "Instalar da Chrome Web Store",
     features: [
-      "Mais de 60 fontes integradas",
-      "Carregamento de fontes personalizadas",
-      "Controlo de fontes por site",
+      "Fontes integradas",
+      "Fontes personalizadas",
       "Atualizações automáticas",
     ],
   },
   ru: {
     lang: "ru",
     title: "Менеджер шрифтов",
-    heading: "Спасибо за установку Менеджера шрифтов!",
+    heading: "Спасибо за установку!",
     serifTest:
       "Оригинальный шрифт на этой странице — 'serif'. Если он отображается по-другому, значит расширение работает правильно!",
     notWorking: "Если не работает, проверьте, включено ли расширение.",
@@ -400,16 +389,15 @@ export const locales: Record<string, LocaleStrings> = {
     viewAllFonts: "Все шрифты →",
     installFromStore: "Установить из Chrome Web Store",
     features: [
-      "Более 60 встроенных шрифтов",
-      "Загрузка пользовательских шрифтов",
-      "Управление шрифтами по сайтам",
+      "Встроенные шрифты",
+      "Свои шрифты",
       "Автоматические обновления",
     ],
   },
   zh_CN: {
     lang: "zh-CN",
     title: "字体管理器",
-    heading: "感谢您安装字体管理器！",
+    heading: "感谢您的安装！",
     serifTest:
       "此页面的原始字体为 'serif'。如果显示为不同的字体，说明扩展程序运行正常！",
     notWorking: '如果未生效，请检查"启用扩展程序"。',
@@ -418,12 +406,12 @@ export const locales: Record<string, LocaleStrings> = {
     fontCount: "当前已注册的字体数量：",
     viewAllFonts: "查看所有字体 →",
     installFromStore: "从 Chrome 网上应用店安装",
-    features: ["60+ 内置字体", "自定义字体上传", "按站点字体控制", "自动更新"],
+    features: ["内置字体", "自定义字体", "自动更新"],
   },
   zh_TW: {
     lang: "zh-TW",
     title: "字體管理器",
-    heading: "感謝您安裝字體管理器！",
+    heading: "感謝您的安裝！",
     serifTest:
       "此頁面的原始字體為 'serif'。如果顯示為不同的字體，表示擴充功能運行正常！",
     notWorking: "如果無法生效，請檢查「啟用擴充功能」。",
@@ -432,7 +420,7 @@ export const locales: Record<string, LocaleStrings> = {
     fontCount: "目前已註冊的字體數量：",
     viewAllFonts: "查看所有字體 →",
     installFromStore: "從 Chrome 線上應用程式商店安裝",
-    features: ["60+ 內建字體", "自訂字體上傳", "按站點字體控制", "自動更新"],
+    features: ["內建字體", "自訂字體", "自動更新"],
   },
 };
 

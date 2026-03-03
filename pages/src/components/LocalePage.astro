@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { locale } = Astro.props;
-const featureIcons = ["🔤", "📤", "🌐", "🔄"];
+const featureIcons = ["lucide:type", "lucide:upload", "lucide:refresh-cw"];
 ---
 
 <Layout lang={locale.lang} title={locale.title}>
@@ -35,7 +35,7 @@ const featureIcons = ["🔤", "📤", "🌐", "🔄"];
     <section class="hero">
       <div class="container">
         <div class="hero-badge">Chrome Extension</div>
-        <h1>{locale.heading}</h1>
+        <h1 style="font-size: clamp(1rem, 2.5vw, 1.4rem); white-space: nowrap;">{locale.heading}</h1>
         <p class="hero-tagline">{locale.serifTest}</p>
         <p class="section-desc" style="max-width: 480px; margin: 0 auto 12px;">
           {locale.notWorking}
@@ -58,7 +58,7 @@ const featureIcons = ["🔤", "📤", "🌐", "🔄"];
         {
           locale.features.map((feat, i) => (
             <div class="feature-card">
-              <div class="feature-icon">{featureIcons[i]}</div>
+              <div class="feature-icon"><Icon name={featureIcons[i]} width="28" height="28" /></div>
               <p>{feat}</p>
             </div>
           ))
