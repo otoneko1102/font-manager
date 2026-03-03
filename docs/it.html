@@ -1,18 +1,2 @@
-<!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8">
-    <title>Gestore dei caratteri</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Grazie per aver installato il Gestore dei caratteri!</h1>
-    <p>Codice sorgente: <a href="https://github.com/otoneko1102/font-manager" target="_blank">GitHub</a></p>
-    <p>Il carattere originale di questa pagina è 'serif'. Se viene visualizzato in modo diverso, significa che l'estensione funziona correttamente!</p>
-    <p>Se non funziona, verifica che l'estensione sia attivata.</p>
-    <p>Vuoi aggiungere altri caratteri? Fai una richiesta su <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> oppure unisciti al nostro <a href="https://discord.gg/yKW8wWKCnS" target="_blank">Discord</a>!</p>
-    <h2>Numero attuale di caratteri registrati: <span id="number">Loading...</span></h2>
-    <ul id="fonts"></ul>
-    <script src="script.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="it" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><title>Gestore dei caratteri</title><style>body{color:#f4f4f4;background-color:#2c2c2c;font-family:serif;padding:10px;text-align:center}h2[data-astro-cid-sckkx6r4]{margin:auto 50px;border-bottom:2px solid #0e016d}a[data-astro-cid-sckkx6r4]{color:#0e016d}#fonts[data-astro-cid-sckkx6r4],#languages[data-astro-cid-sckkx6r4]{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;padding:0;margin:10px auto;max-width:900px;text-align:center}li[data-astro-cid-sckkx6r4]{background-color:#444;padding:10px;border-radius:5px;font-size:16px;color:#fff;text-align:center;transition:background-color .2s;list-style:none}li[data-astro-cid-sckkx6r4]:hover{background-color:#0e016d;cursor:pointer}li[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{padding:20px 60px;color:#fff;border:none}
+</style></head> <body data-astro-cid-sckkx6r4>  <h1>Grazie per aver installato il Gestore dei caratteri!</h1> <p>Source: <a href="https://github.com/otoneko1102/font-manager" target="_blank">GitHub</a></p> <p>Il carattere originale di questa pagina è &#39;serif&#39;. Se viene visualizzato in modo diverso, significa che l&#39;estensione funziona correttamente!</p> <p>Se non funziona, verifica che l&#39;estensione sia attivata.</p> <p>Vuoi aggiungere altri caratteri? Fai una richiesta su <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> oppure unisciti al nostro <a href="https://discord.gg/yKW8wWKCnS" target="_blank">Discord</a>!</p> <h2>Numero attuale di caratteri registrati: <span id="number">Loading...</span></h2> <ul id="fonts"></ul>  <script type="module">document.addEventListener("DOMContentLoaded",async()=>{const n=document.getElementById("number"),o=document.getElementById("fonts");if(!(!n||!o))try{const e=await fetch("https://raw.githubusercontent.com/otoneko1102/font-manager/main/fonts.json");if(!e.ok)throw new Error(`HTTP error! Status: ${e.status}`);const t=await e.json();if(t.fonts&&Array.isArray(t.fonts)){let s="";for(const c of t.fonts)s+=`<li>${c}</li>`;o.innerHTML=s,n.textContent=String(t.fonts.length)}else throw new Error("Invalid JSON structure")}catch(r){n.textContent="Error",console.error("Fetch error:",r)}});</script> </body> </html>

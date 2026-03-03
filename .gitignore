@@ -1,5 +1,6 @@
 node_modules
+dist
+pages/node_modules
+pages/.astro
+pages/dist
 tests
-package-lock.json
-package.json
-

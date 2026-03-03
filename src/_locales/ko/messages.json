@@ -1,0 +1,113 @@
+{
+  "Name": {
+    "message": "폰트 관리자"
+  },
+  "Description": {
+    "message": "모든 페이지의 폰트를 변경합니다."
+  },
+  "Index": {
+    "message": "ko"
+  },
+  "CurrentDomain": {
+    "message": "현재 도메인"
+  },
+  "Add": {
+    "message": "무시 목록에 추가"
+  },
+  "Remove": {
+    "message": "무시 목록에서 제거"
+  },
+  "Check": {
+    "message": "확장 프로그램 활성화"
+  },
+  "FontSettings": {
+    "message": "폰트 설정"
+  },
+  "SaveFont": {
+    "message": "저장"
+  },
+  "ReloadAllTabs": {
+    "message": "모든 탭 새로고침"
+  },
+  "Request": {
+    "message": "다른 폰트 요청이 있나요? <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> 또는 <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>에서 지원해주세요!"
+  },
+  "AddCurrentDomain": {
+    "message": "현재 도메인을 무시 목록에 추가"
+  },
+  "AddYourself": {
+    "message": "본인을 무시 목록에 추가"
+  },
+  "ManualDomain": {
+    "message": "도메인 입력"
+  },
+  "Ignored": {
+    "message": "무시 목록"
+  },
+  "ThDomains": {
+    "message": "도메인"
+  },
+  "ThDel": {
+    "message": "삭제"
+  },
+  "FontManagement": {
+    "message": "폰트 관리"
+  },
+  "DownloadAllFonts": {
+    "message": "모든 폰트 다운로드"
+  },
+  "CheckUpdates": {
+    "message": "업데이트 확인"
+  },
+  "DeleteFonts": {
+    "message": "모든 폰트 삭제"
+  },
+  "Downloading": {
+    "message": "폰트 다운로드 중..."
+  },
+  "DownloadComplete": {
+    "message": "다운로드 완료!"
+  },
+  "DownloadError": {
+    "message": "다운로드에 실패했습니다. 다시 시도해주세요."
+  },
+  "NewFontsAvailable": {
+    "message": "새 폰트를 사용할 수 있습니다! 확장 프로그램을 열어 업데이트하세요."
+  },
+  "UpToDate": {
+    "message": "모든 폰트가 최신 상태입니다."
+  },
+  "FontsInstalled": {
+    "message": "설치됨"
+  },
+  "FontsNotLoaded": {
+    "message": "폰트 목록이 아직 로드되지 않았습니다."
+  },
+  "ConfirmDeleteFonts": {
+    "message": "다운로드한 모든 폰트를 삭제하시겠습니까?"
+  },
+  "FontsDeleted": {
+    "message": "모든 폰트가 삭제되었습니다."
+  },
+  "CustomFonts": {
+    "message": "사용자 정의 글꼴"
+  },
+  "UploadFontLabel": {
+    "message": "글꼴 업로드 (.ttf / .otf / .woff / .woff2)"
+  },
+  "Uploading": {
+    "message": "업로드 중..."
+  },
+  "UploadComplete": {
+    "message": "업로드 완료:"
+  },
+  "UploadError": {
+    "message": "업로드 실패."
+  },
+  "FileTooLarge": {
+    "message": "파일이 너무 큽니다 (최대 10 MB)."
+  },
+  "InvalidFontFile": {
+    "message": "지원하지 않는 파일 형식입니다. 지원: .ttf, .otf, .woff, .woff2"
+  }
+}

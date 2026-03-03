@@ -1,0 +1,113 @@
+{
+  "Name": {
+    "message": "Gerenciador de Fontes"
+  },
+  "Description": {
+    "message": "Altere a fonte em todas as páginas."
+  },
+  "Index": {
+    "message": "pt_BR"
+  },
+  "CurrentDomain": {
+    "message": "Domínio Atual"
+  },
+  "Add": {
+    "message": "Adicionar à lista de ignorados"
+  },
+  "Remove": {
+    "message": "Remover da lista de ignorados"
+  },
+  "Check": {
+    "message": "Ativar extensão"
+  },
+  "FontSettings": {
+    "message": "Configurações de fonte"
+  },
+  "SaveFont": {
+    "message": "Salvar"
+  },
+  "ReloadAllTabs": {
+    "message": "Recarregar todas as abas"
+  },
+  "Request": {
+    "message": "Tem outro pedido de fonte? Apoie-nos no <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> ou no <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Adicionar o domínio atual à lista de ignorados"
+  },
+  "AddYourself": {
+    "message": "Adicionar a si mesmo à lista de ignorados"
+  },
+  "ManualDomain": {
+    "message": "Digite o domínio"
+  },
+  "Ignored": {
+    "message": "Lista de ignorados"
+  },
+  "ThDomains": {
+    "message": "Domínios"
+  },
+  "ThDel": {
+    "message": "Excluir"
+  },
+  "FontManagement": {
+    "message": "Gerenciamento de fontes"
+  },
+  "DownloadAllFonts": {
+    "message": "Baixar todas as fontes"
+  },
+  "CheckUpdates": {
+    "message": "Verificar atualizações"
+  },
+  "DeleteFonts": {
+    "message": "Excluir todas as fontes"
+  },
+  "Downloading": {
+    "message": "Baixando fontes..."
+  },
+  "DownloadComplete": {
+    "message": "Download concluído!"
+  },
+  "DownloadError": {
+    "message": "O download falhou. Tente novamente."
+  },
+  "NewFontsAvailable": {
+    "message": "Novas fontes disponíveis! Abra a extensão para atualizar."
+  },
+  "UpToDate": {
+    "message": "Todas as fontes estão atualizadas."
+  },
+  "FontsInstalled": {
+    "message": "Instaladas"
+  },
+  "FontsNotLoaded": {
+    "message": "Lista de fontes ainda não carregada."
+  },
+  "ConfirmDeleteFonts": {
+    "message": "Excluir todas as fontes baixadas?"
+  },
+  "FontsDeleted": {
+    "message": "Todas as fontes excluídas."
+  },
+  "CustomFonts": {
+    "message": "Fontes personalizadas"
+  },
+  "UploadFontLabel": {
+    "message": "Enviar fonte (.ttf / .otf / .woff / .woff2)"
+  },
+  "Uploading": {
+    "message": "Enviando..."
+  },
+  "UploadComplete": {
+    "message": "Enviado:"
+  },
+  "UploadError": {
+    "message": "Falha no envio."
+  },
+  "FileTooLarge": {
+    "message": "Arquivo muito grande (máx. 10 MB)."
+  },
+  "InvalidFontFile": {
+    "message": "Tipo de arquivo inválido. Suportados: .ttf, .otf, .woff, .woff2"
+  }
+}

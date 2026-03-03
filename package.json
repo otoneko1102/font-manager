@@ -1,0 +1,30 @@
+{
+  "name": "font-manager",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Change the font on all pages.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "cd pages && astro dev",
+    "docs:build": "cd pages && astro build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otoneko1102/font-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/otoneko1102/font-manager/issues"
+  },
+  "homepage": "https://github.com/otoneko1102/font-manager#readme",
+  "license": "ISC",
+  "dependencies": {
+    "fonteditor-core": "^2.4.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.3.0",
+    "@types/chrome": "^0.1.37",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}

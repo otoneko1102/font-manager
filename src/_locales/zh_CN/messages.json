@@ -1,0 +1,113 @@
+{
+  "Name": {
+    "message": "字体管理器"
+  },
+  "Description": {
+    "message": "更改所有页面的字体。"
+  },
+  "Index": {
+    "message": "zh_CN"
+  },
+  "CurrentDomain": {
+    "message": "当前域名"
+  },
+  "Add": {
+    "message": "添加到忽略列表"
+  },
+  "Remove": {
+    "message": "从忽略列表中移除"
+  },
+  "Check": {
+    "message": "启用扩展"
+  },
+  "FontSettings": {
+    "message": "字体设置"
+  },
+  "SaveFont": {
+    "message": "保存"
+  },
+  "ReloadAllTabs": {
+    "message": "重新加载所有标签页"
+  },
+  "Request": {
+    "message": "还有其他字体请求吗？请在<a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>或<a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>上支持！"
+  },
+  "AddCurrentDomain": {
+    "message": "将当前域名添加到忽略列表"
+  },
+  "AddYourself": {
+    "message": "将自己添加到忽略列表"
+  },
+  "ManualDomain": {
+    "message": "输入域名"
+  },
+  "Ignored": {
+    "message": "忽略列表"
+  },
+  "ThDomains": {
+    "message": "域名"
+  },
+  "ThDel": {
+    "message": "删除"
+  },
+  "FontManagement": {
+    "message": "字体管理"
+  },
+  "DownloadAllFonts": {
+    "message": "下载所有字体"
+  },
+  "CheckUpdates": {
+    "message": "检查更新"
+  },
+  "DeleteFonts": {
+    "message": "删除所有字体"
+  },
+  "Downloading": {
+    "message": "正在下载字体..."
+  },
+  "DownloadComplete": {
+    "message": "下载完成！"
+  },
+  "DownloadError": {
+    "message": "下载失败，请重试。"
+  },
+  "NewFontsAvailable": {
+    "message": "有新字体可用！打开扩展进行更新。"
+  },
+  "UpToDate": {
+    "message": "所有字体均为最新。"
+  },
+  "FontsInstalled": {
+    "message": "已安装"
+  },
+  "FontsNotLoaded": {
+    "message": "字体列表尚未加载。"
+  },
+  "ConfirmDeleteFonts": {
+    "message": "删除所有已下载的字体？"
+  },
+  "FontsDeleted": {
+    "message": "所有字体已删除。"
+  },
+  "CustomFonts": {
+    "message": "自定义字体"
+  },
+  "UploadFontLabel": {
+    "message": "上传字体 (.ttf / .otf / .woff / .woff2)"
+  },
+  "Uploading": {
+    "message": "上传中..."
+  },
+  "UploadComplete": {
+    "message": "已上传："
+  },
+  "UploadError": {
+    "message": "上传失败。"
+  },
+  "FileTooLarge": {
+    "message": "文件过大（最大 10 MB）。"
+  },
+  "InvalidFontFile": {
+    "message": "无效的文件类型。支持：.ttf、.otf、.woff、.woff2"
+  }
+}

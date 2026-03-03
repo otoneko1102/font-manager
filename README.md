@@ -48,7 +48,7 @@ Please check at [Official Website](https://font-manager.commonjs.work/)
 </details>
 
 <div style="text-align: center;">
-  <img src="https://github.com/otoneko1102/font-manager/blob/main/icons/128x128.png?raw=true" alt="Logo" style="display: block; width: auto; height: 128px;">
+  <img src="https://github.com/otoneko1102/font-manager/blob/main/src/icons/128x128.png?raw=true" alt="Logo" style="display: block; width: auto; height: 128px;">
 </div>
 
 ### Teams
@@ -58,6 +58,3 @@ Please check at [Official Website](https://font-manager.commonjs.work/)
 ### Download
 - [Chrome Webstore](https://chromewebstore.google.com/detail/mgpehaaemcemgmipcaaclkkmhgllchho)
 - [GitHub Releases](https://github.com/otoneko1102/font-manager/releases)
-
-## Get Support
-<a href="https://discord.gg/yKW8wWKCnS"><img src="https://discordapp.com/api/guilds/1005287561582878800/widget.png?style=banner4" alt="Discord Banner"/></a>

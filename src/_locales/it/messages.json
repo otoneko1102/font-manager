@@ -1,0 +1,113 @@
+{
+  "Name": {
+    "message": "Gestore dei caratteri"
+  },
+  "Description": {
+    "message": "Cambia il carattere su tutte le pagine."
+  },
+  "Index": {
+    "message": "it"
+  },
+  "CurrentDomain": {
+    "message": "Dominio attuale"
+  },
+  "Add": {
+    "message": "Aggiungi all'elenco ignorati"
+  },
+  "Remove": {
+    "message": "Rimuovi dall'elenco ignorati"
+  },
+  "Check": {
+    "message": "Abilita estensione"
+  },
+  "FontSettings": {
+    "message": "Impostazioni carattere"
+  },
+  "SaveFont": {
+    "message": "Salva"
+  },
+  "ReloadAllTabs": {
+    "message": "Ricarica tutte le schede"
+  },
+  "Request": {
+    "message": "Hai altre richieste di caratteri? Supportaci su <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> o <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+  },
+  "AddCurrentDomain": {
+    "message": "Aggiungi il dominio attuale all'elenco ignorati"
+  },
+  "AddYourself": {
+    "message": "Aggiungi te stesso all'elenco ignorati"
+  },
+  "ManualDomain": {
+    "message": "Inserisci dominio"
+  },
+  "Ignored": {
+    "message": "Elenco ignorati"
+  },
+  "ThDomains": {
+    "message": "Domini"
+  },
+  "ThDel": {
+    "message": "Elimina"
+  },
+  "FontManagement": {
+    "message": "Gestione dei caratteri"
+  },
+  "DownloadAllFonts": {
+    "message": "Scarica tutti i caratteri"
+  },
+  "CheckUpdates": {
+    "message": "Controlla aggiornamenti"
+  },
+  "DeleteFonts": {
+    "message": "Elimina tutti i caratteri"
+  },
+  "Downloading": {
+    "message": "Download dei caratteri in corso..."
+  },
+  "DownloadComplete": {
+    "message": "Download completato!"
+  },
+  "DownloadError": {
+    "message": "Download non riuscito. Riprova."
+  },
+  "NewFontsAvailable": {
+    "message": "Nuovi caratteri disponibili! Apri l'estensione per aggiornare."
+  },
+  "UpToDate": {
+    "message": "Tutti i caratteri sono aggiornati."
+  },
+  "FontsInstalled": {
+    "message": "Installati"
+  },
+  "FontsNotLoaded": {
+    "message": "Elenco dei caratteri non ancora caricato."
+  },
+  "ConfirmDeleteFonts": {
+    "message": "Eliminare tutti i caratteri scaricati?"
+  },
+  "FontsDeleted": {
+    "message": "Tutti i caratteri eliminati."
+  },
+  "CustomFonts": {
+    "message": "Caratteri personalizzati"
+  },
+  "UploadFontLabel": {
+    "message": "Carica carattere (.ttf / .otf / .woff / .woff2)"
+  },
+  "Uploading": {
+    "message": "Caricamento..."
+  },
+  "UploadComplete": {
+    "message": "Caricato:"
+  },
+  "UploadError": {
+    "message": "Caricamento fallito."
+  },
+  "FileTooLarge": {
+    "message": "File troppo grande (max 10 MB)."
+  },
+  "InvalidFontFile": {
+    "message": "Tipo di file non valido. Supportati: .ttf, .otf, .woff, .woff2"
+  }
+}

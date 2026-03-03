@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { indexStrings, languageLinks } from '../i18n/translations';
+---
+
+<Layout lang={indexStrings.lang} title={indexStrings.title}>
+  <h1>{indexStrings.heading}</h1>
+  <p>Source: <a href="https://github.com/otoneko1102/font-manager" target="_blank">GitHub</a></p>
+  <p>{indexStrings.description}</p>
+  <p>{indexStrings.detail}</p>
+  <p>{indexStrings.comfort}</p>
+  <p>{indexStrings.looking}</p>
+  <p><Fragment set:html={indexStrings.fontRequests} /></p>
+  <h2>{indexStrings.fontCount} <span id="number">Loading...</span></h2>
+  <ul id="fonts"></ul>
+  <h2>{indexStrings.supportedLanguages}</h2>
+  <ul id="languages">
+    {languageLinks.map((link) => (
+      <li><a href={`${link.code}.html`}>{link.label}</a></li>
+    ))}
+  </ul>
+</Layout>

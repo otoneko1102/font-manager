@@ -1,0 +1,102 @@
+---
+interface Props {
+  lang: string;
+  title: string;
+}
+
+const { lang, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <style>
+      body {
+        color: #f4f4f4;
+        background-color: #2c2c2c;
+        font-family: serif;
+        padding: 10px;
+        text-align: center;
+      }
+
+      h2 {
+        margin: auto 50px;
+        border-bottom: 2px solid #0e016d;
+      }
+
+      a {
+        color: #0e016d;
+      }
+
+      #fonts, #languages {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+        padding: 0;
+        margin: 10px auto;
+        max-width: 900px;
+        text-align: center;
+      }
+
+      li {
+        background-color: #444444;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        transition: background-color 0.2s;
+        list-style: none;
+      }
+
+      li:hover {
+        background-color: #0e016d;
+        cursor: pointer;
+      }
+
+      li a {
+        padding: 20px 60px;
+        color: #ffffff;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        const numberElement = document.getElementById("number");
+        const fontsElement = document.getElementById("fonts");
+        if (!numberElement || !fontsElement) return;
+
+        try {
+          const FONTS_JSON_URL =
+            "https://raw.githubusercontent.com/otoneko1102/font-manager/main/fonts.json";
+          const response = await fetch(FONTS_JSON_URL);
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+
+          const json = await response.json();
+
+          if (json.fonts && Array.isArray(json.fonts)) {
+            let list = "";
+            for (const font of json.fonts) {
+              list += `<li>${font}</li>`;
+            }
+            fontsElement.innerHTML = list;
+            numberElement.textContent = String(json.fonts.length);
+          } else {
+            throw new Error("Invalid JSON structure");
+          }
+        } catch (error) {
+          numberElement.textContent = "Error";
+          console.error("Fetch error:", error);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import type { LocaleStrings } from '../i18n/translations';
+
+interface Props {
+  locale: LocaleStrings;
+}
+
+const { locale } = Astro.props;
+---
+
+<Layout lang={locale.lang} title={locale.title}>
+  <h1>{locale.heading}</h1>
+  <p>Source: <a href="https://github.com/otoneko1102/font-manager" target="_blank">GitHub</a></p>
+  <p>{locale.serifTest}</p>
+  <p>{locale.notWorking}</p>
+  <p><Fragment set:html={locale.fontRequests} /></p>
+  <h2>{locale.fontCount} <span id="number">Loading...</span></h2>
+  <ul id="fonts"></ul>
+</Layout>
