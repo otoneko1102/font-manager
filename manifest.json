@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "default_locale": "en",
   "name": "__MSG_Name__",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "__MSG_Description__",
   "permissions": [
     "storage",
@@ -50,6 +50,9 @@
         "fonts/HinaMincho.ttf",
         "fonts/Iansui.ttf",
         "fonts/IBMPlexSans.ttf",
+        "fonts/IgyouMincho.ttf",
+        "fonts/IgyouMincho2.ttf",
+        "fonts/IgyouMincho3.ttf",
         "fonts/IrohakakuC.ttf",
         "fonts/JetBrainsMono.ttf",
         "fonts/JFDotShinonome14.ttf",
