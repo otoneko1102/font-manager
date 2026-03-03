@@ -12,7 +12,7 @@ export interface DownloadStatus {
 }
 
 export type MessageType =
-  | { type: "downloadFont"; fontName: string }
+  | { type: "downloadFont"; fontFile: string }
   | { type: "downloadAllFonts" }
   | { type: "updateFontList" }
   | { type: "checkForUpdates" }

@@ -1,4 +1,4 @@
-import { decodePunycodeDomain, isDomainIgnored, arrayBufferToBase64 } from "./utils";
+import { decodePunycodeDomain, isDomainIgnored, arrayBufferToBase64, fontNameFromFile } from "./utils";
 import type { DownloadStatus } from "./types";
 import "./language";
 
@@ -81,13 +81,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     availableFonts.sort((a, b) => {
-      if (a === "NotoSans") return -1;
-      if (b === "NotoSans") return 1;
-      const aInst = installedFonts.includes(a);
-      const bInst = installedFonts.includes(b);
+      const aN = fontNameFromFile(a);
+      const bN = fontNameFromFile(b);
+      if (aN === "NotoSans") return -1;
+      if (bN === "NotoSans") return 1;
+      const aInst = installedFonts.includes(aN);
+      const bInst = installedFonts.includes(bN);
       if (aInst && !bInst) return -1;
       if (!aInst && bInst) return 1;
-      return a.localeCompare(b);
+      return aN.localeCompare(bN);
     });
 
     fontSelect.innerHTML = "";
@@ -108,18 +110,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       fontSelect.appendChild(sep);
     }
 
-    for (const font of availableFonts) {
+    for (const fontFile of availableFonts) {
+      const name = fontNameFromFile(fontFile);
       const option = document.createElement("option");
-      option.value = `${font}.ttf`;
-      const isInstalled = installedFonts.includes(font);
-      option.textContent = isInstalled ? `${font} ✓` : `${font} ⬇`;
+      option.value = fontFile;
+      const isInstalled = installedFonts.includes(name);
+      option.textContent = isInstalled ? `${name} ✓` : `${name} ⬇`;
       if (!isInstalled) option.style.opacity = "0.6";
       fontSelect.appendChild(option);
     }
 
     fontSelect.value = selectedFont;
     if (!fontSelect.value && availableFonts.length > 0) {
-      fontSelect.value = `${availableFonts[0]}.ttf`;
+      fontSelect.value = availableFonts[0];
     }
 
     chrome.storage.local.set({ selectedFont: fontSelect.value || selectedFont });
@@ -141,7 +144,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    const fontName = selectedFont.replace(".ttf", "");
+    const fontName = fontNameFromFile(selectedFont);
 
     const data = await chrome.storage.local.get("installedFonts");
     const installed = (data.installedFonts as string[]) || [];
@@ -151,7 +154,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       saveFontBtn.textContent = "⬇ ...";
       const result = await chrome.runtime.sendMessage({
         type: "downloadFont",
-        fontName,
+        fontFile: selectedFont,
       });
       saveFontBtn.disabled = false;
       saveFontBtn.textContent =

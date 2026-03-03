@@ -5,7 +5,8 @@
   "description": "Change the font on all pages.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run fonts && vite build",
+    "fonts": "npx tsx scripts/generate-fonts-json.ts",
     "docs:dev": "cd pages && astro dev",
     "docs:build": "cd pages && astro build"
   },
@@ -18,12 +19,11 @@
   },
   "homepage": "https://github.com/otoneko1102/font-manager#readme",
   "license": "ISC",
-  "dependencies": {
-    "fonteditor-core": "^2.4.1"
-  },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.3.0",
     "@types/chrome": "^0.1.37",
+    "fonteditor-core": "^2.4.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^5.4.21"
   }

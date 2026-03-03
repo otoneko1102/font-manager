@@ -96,6 +96,11 @@ export function arrayBufferToBase64(buffer: ArrayBuffer): string {
   return btoa(binary);
 }
 
+/** Strip font file extension to get the font name */
+export function fontNameFromFile(filename: string): string {
+  return filename.replace(/\.(ttf|otf|woff2?)$/i, "");
+}
+
 export function base64ToArrayBuffer(base64: string): ArrayBuffer {
   const binary = atob(base64);
   const buffer = new ArrayBuffer(binary.length);

@@ -1,5 +1,5 @@
 import { arrayBufferToBase64 } from "./utils";
-import type { FontCatalog, DownloadStatus } from "./types";
+import type { FontCatalog, DownloadStatus, MessageType } from "./types";
 
 // =============================================================
 // Font Manager - Background Service Worker
@@ -22,7 +22,8 @@ chrome.runtime.onInstalled.addListener(async (details) => {
 
     const catalog = await fetchFontCatalog();
     if (catalog) {
-      await downloadFont("NotoSans");
+      const notoFile = catalog.fonts.find((f) => f.startsWith("NotoSans.")) || "NotoSans.ttf";
+      await downloadFont(notoFile);
     }
   }
 
@@ -77,14 +78,7 @@ chrome.storage.onChanged.addListener((changes) => {
 
       for (const tab of tabs) {
         if (tab.id !== undefined) {
-          try {
-            chrome.scripting.executeScript({
-              target: { tabId: tab.id },
-              files: ["content.js"],
-            });
-          } catch {
-            // ignore
-          }
+          chrome.tabs.reload(tab.id).catch(() => {});
         }
       }
     });
@@ -93,9 +87,9 @@ chrome.storage.onChanged.addListener((changes) => {
 
 // ----- Message Handling -----
 
-chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message: MessageType, _sender, sendResponse) => {
   if (message.type === "downloadFont") {
-    downloadFont(message.fontName).then((success) => {
+    downloadFont(message.fontFile).then((success) => {
       sendResponse({ success });
     });
     return true;
@@ -178,15 +172,19 @@ async function checkForUpdates(): Promise<boolean> {
 
   if (oldVersion !== newData.version) return true;
 
-  const newFonts = newData.fonts.filter((f) => !installedFonts.includes(f));
+  const newFonts = newData.fonts.filter((f) => {
+    const name = f.replace(/\.(ttf|otf|woff2?)$/i, "");
+    return !installedFonts.includes(name);
+  });
   return newFonts.length > 0;
 }
 
 // ----- Font Download -----
 
-async function downloadFont(fontName: string): Promise<boolean> {
+async function downloadFont(fontFile: string): Promise<boolean> {
+  const fontName = fontFile.replace(/\.(ttf|otf|woff2?)$/i, "");
   try {
-    const url = `${FONTS_DIR_URL}${fontName}.ttf`;
+    const url = `${FONTS_DIR_URL}${fontFile}`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
@@ -204,7 +202,7 @@ async function downloadFont(fontName: string): Promise<boolean> {
 
     return true;
   } catch (error) {
-    console.error(`Failed to download font ${fontName}:`, error);
+    console.error(`Failed to download font ${fontFile}:`, error);
     return false;
   }
 }
@@ -220,7 +218,10 @@ async function downloadAllFonts(): Promise<{
   ]);
   const available = (data.availableFonts as string[]) || [];
   const installed = (data.installedFonts as string[]) || [];
-  const toDownload = available.filter((f) => !installed.includes(f));
+  const toDownload = available.filter((f) => {
+    const name = f.replace(/\.(ttf|otf|woff2?)$/i, "");
+    return !installed.includes(name);
+  });
 
   const total = toDownload.length;
   let completed = 0;
@@ -236,8 +237,8 @@ async function downloadAllFonts(): Promise<{
     } satisfies DownloadStatus,
   });
 
-  for (const fontName of toDownload) {
-    const success = await downloadFont(fontName);
+  for (const fontFile of toDownload) {
+    const success = await downloadFont(fontFile);
     completed++;
     if (!success) failed++;
 
@@ -246,7 +247,7 @@ async function downloadAllFonts(): Promise<{
         downloading: completed < total,
         completed,
         total,
-        current: fontName,
+        current: fontFile,
         failed,
       } satisfies DownloadStatus,
     });

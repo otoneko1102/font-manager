@@ -1,4 +1,4 @@
-import { decodePunycodeDomain, isDomainIgnored, base64ToArrayBuffer } from "./utils";
+import { decodePunycodeDomain, isDomainIgnored, base64ToArrayBuffer, fontNameFromFile } from "./utils";
 
 chrome.storage.local.get(
   ["extensionEnabled", "ignoredDomains", "selectedFont"],
@@ -22,7 +22,7 @@ chrome.storage.local.get(
     const isCustom = selectedFont.startsWith("custom:");
     const fontName = isCustom
       ? selectedFont.slice("custom:".length)
-      : selectedFont.replace(".ttf", "");
+      : fontNameFromFile(selectedFont);
     const storageKey = isCustom ? `customFont_${fontName}` : `font_${fontName}`;
 
     console.log(`Applying font: ${fontName} to ${currentDomain}${isCustom ? " (custom)" : ""}`);
