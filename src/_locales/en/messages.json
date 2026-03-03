@@ -109,5 +109,8 @@
   },
   "InvalidFontFile": {
     "message": "Invalid file type. Supported: .ttf, .otf, .woff, .woff2"
+  },
+  "ViewAllFonts": {
+    "message": "View All Fonts →"
   }
 }

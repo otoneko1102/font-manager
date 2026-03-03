@@ -108,6 +108,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         face.load().then(() => {
           document.fonts.add(face);
           el.style.fontFamily = `'${fontId}', sans-serif`;
+          if (el === fontSelect.selectedOptions[0]) {
+            const sample = document.getElementById("font-preview-sample");
+            if (sample) sample.style.fontFamily = `'${fontId}', sans-serif`;
+          }
         }).catch(() => {});
       });
     }
@@ -119,6 +123,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (loadedPreviewFonts.has(fontId)) {
         el.style.fontFamily = `'${fontId}', sans-serif`;
         el.textContent = `${name} ⬇`;
+        if (el === fontSelect.selectedOptions[0]) {
+          const sample = document.getElementById("font-preview-sample");
+          if (sample) sample.style.fontFamily = `'${fontId}', sans-serif`;
+        }
         return;
       }
       loadedPreviewFonts.add(fontId);
@@ -128,6 +136,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.fonts.add(face);
         el.style.fontFamily = `'${fontId}', sans-serif`;
         el.textContent = `${name} ⬇`;
+        if (el === fontSelect.selectedOptions[0]) {
+          const sample = document.getElementById("font-preview-sample");
+          if (sample) sample.style.fontFamily = `'${fontId}', sans-serif`;
+        }
       }).catch(() => {
         el.textContent = `${name} ⬇`;
       });
@@ -170,11 +182,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       fontSelect.value = availableFonts[0];
     }
 
-    // Apply preview font to the select element itself
+    // Apply preview font to the select element itself and the sample text
+    const fontPreviewSample = document.getElementById("font-preview-sample");
     function updateSelectPreview(): void {
       const selected = fontSelect.selectedOptions[0];
       if (selected) {
-        fontSelect.style.fontFamily = selected.style.fontFamily || "";
+        const ff = selected.style.fontFamily || "";
+        fontSelect.style.fontFamily = ff;
+        if (fontPreviewSample) fontPreviewSample.style.fontFamily = ff;
       }
     }
     fontSelect.addEventListener("change", updateSelectPreview);

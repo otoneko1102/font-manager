@@ -108,6 +108,7 @@
     "message": "檔案過大（最大 10 MB）。"
   },
   "InvalidFontFile": {
-    "message": "無效的檔案類型。支援：.ttf、.otf、.woff、.woff2"
-  }
+    "message": "無效的檔案類型。支援：.ttf、.otf、.woff、.woff2"  },
+  "ViewAllFonts": {
+    "message": "查看所有字體 →"  }
 }

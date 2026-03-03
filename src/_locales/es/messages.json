@@ -108,6 +108,7 @@
     "message": "Archivo demasiado grande (máx. 10 MB)."
   },
   "InvalidFontFile": {
-    "message": "Tipo de archivo no válido. Compatibles: .ttf, .otf, .woff, .woff2"
-  }
+    "message": "Tipo de archivo no válido. Compatibles: .ttf, .otf, .woff, .woff2"  },
+  "ViewAllFonts": {
+    "message": "Ver todas las fuentes →"  }
 }

@@ -108,6 +108,7 @@
     "message": "Fichier trop volumineux (max 10 Mo)."
   },
   "InvalidFontFile": {
-    "message": "Type de fichier non valide. Pris en charge : .ttf, .otf, .woff, .woff2"
-  }
+    "message": "Type de fichier non valide. Pris en charge : .ttf, .otf, .woff, .woff2"  },
+  "ViewAllFonts": {
+    "message": "Voir toutes les polices →"  }
 }

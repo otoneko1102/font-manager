@@ -108,6 +108,7 @@
     "message": "파일이 너무 큽니다 (최대 10 MB)."
   },
   "InvalidFontFile": {
-    "message": "지원하지 않는 파일 형식입니다. 지원: .ttf, .otf, .woff, .woff2"
-  }
+    "message": "지원하지 않는 파일 형식입니다. 지원: .ttf, .otf, .woff, .woff2"  },
+  "ViewAllFonts": {
+    "message": "전체 글꼴 보기 →"  }
 }

@@ -32,3 +32,8 @@ if (requestEl && requestMsg) requestEl.innerHTML = requestMsg;
 const manualDomainEl = document.getElementById("manual-domain") as HTMLInputElement | null;
 const manualDomainMsg = chrome.i18n.getMessage("ManualDomain");
 if (manualDomainEl && manualDomainMsg) manualDomainEl.placeholder = manualDomainMsg;
+
+// ViewAllFonts link
+const viewAllFontsEl = document.getElementById("view-all-fonts-link");
+const viewAllFontsMsg = chrome.i18n.getMessage("ViewAllFonts");
+if (viewAllFontsEl && viewAllFontsMsg) viewAllFontsEl.textContent = viewAllFontsMsg;

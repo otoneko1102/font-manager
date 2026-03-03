@@ -2,7 +2,7 @@ body {
   display: block;
   color: #f4f4f4;
   background-color: #2c2c2c;
-  width: 400px;
+  width: 520px;
   font-family: "Arial", sans-serif;
   padding: 10px;
   text-align: center;
@@ -59,7 +59,7 @@ select, button, input {
 }
 
 select {
-  width: 180px;
+  width: 280px;
   background-color: #3c3c3c;
   color: #f4f4f4;
   border: 1px solid #0e016d;
@@ -67,6 +67,33 @@ select {
 
 #save-font {
   min-width: 70px;
+}
+
+#font-preview-sample {
+  display: block;
+  margin: 8px auto 2px;
+  padding: 8px 16px;
+  background-color: #3c3c3c;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #f4f4f4;
+  letter-spacing: 0.05em;
+  width: fit-content;
+  min-width: 200px;
+}
+
+#view-all-fonts-link {
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #7c70ff;
+  text-decoration: none;
+}
+
+#view-all-fonts-link:hover {
+  text-decoration: underline;
 }
 
 button {

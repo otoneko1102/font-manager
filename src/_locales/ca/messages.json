@@ -108,6 +108,7 @@
     "message": "Fitxer massa gran (màx. 10 MB)."
   },
   "InvalidFontFile": {
-    "message": "Tipus de fitxer no vàlid. Compatibles: .ttf, .otf, .woff, .woff2"
-  }
+    "message": "Tipus de fitxer no vàlid. Compatibles: .ttf, .otf, .woff, .woff2"  },
+  "ViewAllFonts": {
+    "message": "Veure totes les tipografies →"  }
 }
