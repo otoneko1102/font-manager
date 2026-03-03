@@ -94,6 +94,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     fontSelect.innerHTML = "";
 
+    const FONT_BASE_URL =
+      "https://raw.githubusercontent.com/otoneko1102/font-manager/main/fonts/";
+    const loadedPreviewFonts = new Set<string>();
+
     // Helper: load a font from storage and apply to an element
     function applyFontPreview(storageKey: string, fontId: string, el: HTMLElement): void {
       chrome.storage.local.get(storageKey, (fontData) => {
@@ -106,6 +110,21 @@ document.addEventListener("DOMContentLoaded", async () => {
           el.style.fontFamily = `'${fontId}', sans-serif`;
         }).catch(() => {});
       });
+    }
+
+    // Helper: load a font from remote URL and apply to an element
+    function applyRemoteFontPreview(fontFile: string, fontId: string, el: HTMLElement): void {
+      if (loadedPreviewFonts.has(fontId)) {
+        el.style.fontFamily = `'${fontId}', sans-serif`;
+        return;
+      }
+      loadedPreviewFonts.add(fontId);
+      const url = `${FONT_BASE_URL}${encodeURIComponent(fontFile)}`;
+      const face = new FontFace(fontId, `url('${url}')`);
+      face.load().then(() => {
+        document.fonts.add(face);
+        el.style.fontFamily = `'${fontId}', sans-serif`;
+      }).catch(() => {});
     }
 
     // Add custom fonts at the top
@@ -135,6 +154,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       fontSelect.appendChild(option);
       if (isInstalled) {
         applyFontPreview(`font_${name}`, `FP_${name}`, option);
+      } else {
+        applyRemoteFontPreview(fontFile, `FP_${name}`, option);
       }
     }
 
