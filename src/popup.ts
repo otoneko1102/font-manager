@@ -113,9 +113,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Helper: load a font from remote URL and apply to an element
-    function applyRemoteFontPreview(fontFile: string, fontId: string, el: HTMLElement): void {
+    function applyRemoteFontPreview(fontFile: string, fontId: string, el: HTMLElement, name: string): void {
+      // Show loading indicator
+      el.textContent = `${name} ⏳`;
       if (loadedPreviewFonts.has(fontId)) {
         el.style.fontFamily = `'${fontId}', sans-serif`;
+        el.textContent = `${name} ⬇`;
         return;
       }
       loadedPreviewFonts.add(fontId);
@@ -124,7 +127,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       face.load().then(() => {
         document.fonts.add(face);
         el.style.fontFamily = `'${fontId}', sans-serif`;
-      }).catch(() => {});
+        el.textContent = `${name} ⬇`;
+      }).catch(() => {
+        el.textContent = `${name} ⬇`;
+      });
     }
 
     // Add custom fonts at the top
@@ -155,7 +161,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (isInstalled) {
         applyFontPreview(`font_${name}`, `FP_${name}`, option);
       } else {
-        applyRemoteFontPreview(fontFile, `FP_${name}`, option);
+        applyRemoteFontPreview(fontFile, `FP_${name}`, option, name);
       }
     }
 

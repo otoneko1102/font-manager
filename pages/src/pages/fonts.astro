@@ -251,8 +251,8 @@ const t = fontsPageStrings.en;
           .map(
             (f, i) =>
               `<div class="font-card" data-font-file="${f.file}" style="animation-delay: ${Math.min(i * 20, 600)}ms">
-                <div class="font-name" style="font-family: 'FP_${f.name}', sans-serif">${f.name}</div>
-                <div class="font-preview" style="font-family: 'FP_${f.name}', sans-serif">AaBbCc 123 あア</div>
+                <div class="font-name" data-font-preview style="font-family: 'FP_${f.name}', sans-serif !important">${f.name}</div>
+                <div class="font-preview" data-font-preview style="font-family: 'FP_${f.name}', sans-serif !important">AaBbCc 123 あア</div>
                 <div class="font-ext">${f.ext}</div>
               </div>`,
           )

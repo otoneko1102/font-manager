@@ -147,7 +147,7 @@ const featureIcons = ["🔤", "📤", "🌐", "🔄"];
           [...arr, ...arr]
             .map(
               (f) =>
-                `<span class="marquee-item" data-font-file="${f.file}" style="font-family: 'FP_${f.name}', sans-serif">${f.name}</span>`,
+                `<span class="marquee-item" data-font-file="${f.file}" data-font-preview style="font-family: 'FP_${f.name}', sans-serif !important">${f.name}</span>`,
             )
             .join("");
         row1.innerHTML = makeItems(row1Fonts);

@@ -42,7 +42,7 @@ chrome.storage.local.get(
         .then(() => {
           document.fonts.add(font);
           const style = document.createElement("style");
-          style.textContent = `* { font-family: 'CustomFont', sans-serif !important; }`;
+          style.textContent = `*:not([data-font-file]):not([data-font-preview]) { font-family: 'CustomFont', sans-serif !important; }`;
           document.documentElement.appendChild(style);
         })
         .catch((err) => {
