@@ -7,6 +7,7 @@ export interface LocaleStrings {
   fontRequests: string;
   fontCount: string;
   viewAllFonts: string;
+  installFromStore: string;
   features: string[];
 }
 
@@ -22,6 +23,7 @@ export interface IndexStrings {
   fontCount: string;
   supportedLanguages: string;
   viewAllFonts: string;
+  installFromStore: string;
   features: string[];
   heroTagline: string;
 }
@@ -178,6 +180,7 @@ export const indexStrings: IndexStrings = {
   fontCount: "Current number of registered fonts:",
   supportedLanguages: "Supported Languages",
   viewAllFonts: "View All Fonts →",
+  installFromStore: "Install from Chrome Web Store",
   heroTagline: "Transform your browsing experience with beautiful fonts",
   features: [
     "60+ built-in fonts",
@@ -199,6 +202,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Any other font requests? Let us know on <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Current number of registered fonts:",
     viewAllFonts: "View All Fonts →",
+    installFromStore: "Install from Chrome Web Store",
     features: [
       "60+ built-in fonts",
       "Custom font upload",
@@ -219,6 +223,7 @@ export const locales: Record<string, LocaleStrings> = {
       '他に追加してほしいフォントはありますか？ <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> でリクエストを受け付けています！',
     fontCount: "現在登録されているフォント数:",
     viewAllFonts: "全フォント一覧を見る →",
+    installFromStore: "Chrome ウェブストアからインストール",
     features: [
       "60以上の内蔵フォント",
       "カスタムフォントアップロード",
@@ -237,6 +242,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Voleu afegir altres tipografies? Feu una sol·licitud a <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Nombre actual de tipografies registrades:",
     viewAllFonts: "Veure totes les tipografies →",
+    installFromStore: "Instal·la des de Chrome Web Store",
     features: [
       "Més de 60 tipografies integrades",
       "Càrrega de tipografies personalitzades",
@@ -256,6 +262,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Möchten Sie weitere Schriftarten hinzufügen? Erstellen Sie eine Anfrage auf <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Aktuelle Anzahl registrierter Schriftarten:",
     viewAllFonts: "Alle Schriftarten anzeigen →",
+    installFromStore: "Im Chrome Web Store installieren",
     features: [
       "Über 60 integrierte Schriftarten",
       "Benutzerdefinierte Schriftarten hochladen",
@@ -274,6 +281,7 @@ export const locales: Record<string, LocaleStrings> = {
       '¿Quieres agregar otras fuentes? Haz una solicitud en <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Número actual de fuentes registradas:",
     viewAllFonts: "Ver todas las fuentes →",
+    installFromStore: "Instalar desde Chrome Web Store",
     features: [
       "Más de 60 fuentes integradas",
       "Carga de fuentes personalizadas",
@@ -293,6 +301,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Vous souhaitez ajouter d\'autres polices ? Faites une demande sur <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> !',
     fontCount: "Nombre actuel de polices enregistrées :",
     viewAllFonts: "Voir toutes les polices →",
+    installFromStore: "Installer depuis le Chrome Web Store",
     features: [
       "Plus de 60 polices intégrées",
       "Téléchargement de polices personnalisées",
@@ -311,6 +320,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Vuoi aggiungere altri caratteri? Fai una richiesta su <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Numero attuale di caratteri registrati:",
     viewAllFonts: "Vedi tutti i caratteri →",
+    installFromStore: "Installa dal Chrome Web Store",
     features: [
       "Oltre 60 caratteri integrati",
       "Caricamento caratteri personalizzati",
@@ -329,6 +339,7 @@ export const locales: Record<string, LocaleStrings> = {
       '추가하고 싶은 글꼴이 있나요? <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>에서 요청하세요!',
     fontCount: "현재 등록된 글꼴 수:",
     viewAllFonts: "전체 글꼴 보기 →",
+    installFromStore: "Chrome 웹 스토어에서 설치",
     features: [
       "60개 이상의 기본 글꼴",
       "맞춤 글꼴 업로드",
@@ -348,6 +359,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Quer adicionar outras fontes? Faça uma solicitação no <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Número atual de fontes registradas:",
     viewAllFonts: "Ver todas as fontes →",
+    installFromStore: "Instalar da Chrome Web Store",
     features: [
       "Mais de 60 fontes integradas",
       "Upload de fontes personalizadas",
@@ -367,6 +379,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Quer adicionar outras fontes? Faça um pedido no <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Número atual de fontes registadas:",
     viewAllFonts: "Ver todas as fontes →",
+    installFromStore: "Instalar da Chrome Web Store",
     features: [
       "Mais de 60 fontes integradas",
       "Carregamento de fontes personalizadas",
@@ -385,6 +398,7 @@ export const locales: Record<string, LocaleStrings> = {
       'Хотите добавить другие шрифты? Оставьте запрос на <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Текущее количество зарегистрированных шрифтов:",
     viewAllFonts: "Все шрифты →",
+    installFromStore: "Установить из Chrome Web Store",
     features: [
       "Более 60 встроенных шрифтов",
       "Загрузка пользовательских шрифтов",
@@ -403,6 +417,7 @@ export const locales: Record<string, LocaleStrings> = {
       '有其他字体需求吗？请在 <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> 进行反馈！',
     fontCount: "当前已注册的字体数量：",
     viewAllFonts: "查看所有字体 →",
+    installFromStore: "从 Chrome 网上应用店安装",
     features: ["60+ 内置字体", "自定义字体上传", "按站点字体控制", "自动更新"],
   },
   zh_TW: {
@@ -416,6 +431,7 @@ export const locales: Record<string, LocaleStrings> = {
       '有其他字體需求嗎？請在 <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> 進行回饋！',
     fontCount: "目前已註冊的字體數量：",
     viewAllFonts: "查看所有字體 →",
+    installFromStore: "從 Chrome 線上應用程式商店安裝",
     features: ["60+ 內建字體", "自訂字體上傳", "按站點字體控制", "自動更新"],
   },
 };
