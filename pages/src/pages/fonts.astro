@@ -133,6 +133,15 @@ const t = fontsPageStrings.en;
       font-weight: 600;
       color: var(--text-primary);
       margin-bottom: 4px;
+      transition: font-family 0.3s ease;
+    }
+
+    .font-card .font-preview {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      min-height: 1.6em;
+      transition: font-family 0.3s ease;
     }
 
     .font-card .font-ext {
@@ -171,7 +180,34 @@ const t = fontsPageStrings.en;
       const noResults = document.getElementById("no-results");
       if (!numberEl || !grid || !searchInput || !noResults) return;
 
-      let allFonts: { name: string; ext: string }[] = [];
+      let allFonts: { name: string; ext: string; file: string }[] = [];
+
+      const FONT_BASE =
+        "https://raw.githubusercontent.com/otoneko1102/font-manager/main/fonts/";
+      const loadedFonts = new Set<string>();
+
+      // Lazy-load fonts as cards scroll into view
+      const fontObserver = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            const card = entry.target as HTMLElement;
+            const file = card.dataset.fontFile;
+            if (!file || loadedFonts.has(file)) continue;
+            loadedFonts.add(file);
+            const name = file.replace(/\.(ttf|otf|woff2?)$/i, "");
+            const face = new FontFace(
+              `FP_${name}`,
+              `url('${FONT_BASE}${encodeURIComponent(file)}')`,
+            );
+            face
+              .load()
+              .then(() => document.fonts.add(face))
+              .catch(() => {});
+          }
+        },
+        { rootMargin: "200px" },
+      );
 
       try {
         const res = await fetch(
@@ -186,6 +222,7 @@ const t = fontsPageStrings.en;
         allFonts = json.fonts.map((f: string) => {
           const dotIdx = f.lastIndexOf(".");
           return {
+            file: f,
             name: dotIdx >= 0 ? f.substring(0, dotIdx) : f,
             ext: dotIdx >= 0 ? f.substring(dotIdx) : "",
           };
@@ -207,16 +244,24 @@ const t = fontsPageStrings.en;
         noResults.style.display = filtered.length === 0 ? "block" : "none";
       });
 
-      function renderFonts(fonts: { name: string; ext: string }[]) {
+      function renderFonts(
+        fonts: { name: string; ext: string; file: string }[],
+      ) {
         grid!.innerHTML = fonts
           .map(
             (f, i) =>
-              `<div class="font-card" style="animation-delay: ${Math.min(i * 20, 600)}ms">
-                <div class="font-name">${f.name}</div>
+              `<div class="font-card" data-font-file="${f.file}" style="animation-delay: ${Math.min(i * 20, 600)}ms">
+                <div class="font-name" style="font-family: 'FP_${f.name}', sans-serif">${f.name}</div>
+                <div class="font-preview" style="font-family: 'FP_${f.name}', sans-serif">AaBbCc 123 あア</div>
                 <div class="font-ext">${f.ext}</div>
               </div>`,
           )
           .join("");
+
+        // Observe new cards for lazy font loading
+        grid!
+          .querySelectorAll(".font-card[data-font-file]")
+          .forEach((el) => fontObserver.observe(el));
       }
     });
   </script>

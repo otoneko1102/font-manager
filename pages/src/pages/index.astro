@@ -119,6 +119,9 @@ const featureIcons = ["🔤", "📤", "🌐", "🔄"];
       const row2 = document.getElementById("marquee-row-2");
       if (!numberEl || !row1 || !row2) return;
 
+      const FONT_BASE =
+        "https://raw.githubusercontent.com/otoneko1102/font-manager/main/fonts/";
+
       try {
         const res = await fetch(
           "https://raw.githubusercontent.com/otoneko1102/font-manager/main/fonts.json",
@@ -129,21 +132,53 @@ const featureIcons = ["🔤", "📤", "🌐", "🔄"];
         if (!json.fonts || !Array.isArray(json.fonts))
           throw new Error("Invalid JSON");
 
-        const fonts: string[] = json.fonts.map((f: string) =>
-          f.replace(/\.(ttf|otf|woff2?)$/i, ""),
-        );
+        const fontFiles: string[] = json.fonts;
+        const fonts = fontFiles.map((f: string) => ({
+          file: f,
+          name: f.replace(/\.(ttf|otf|woff2?)$/i, ""),
+        }));
         numberEl.textContent = String(fonts.length);
 
         const mid = Math.ceil(fonts.length / 2);
         const row1Fonts = fonts.slice(0, mid);
         const row2Fonts = fonts.slice(mid);
 
-        const makeItems = (arr: string[]) =>
+        const makeItems = (arr: { file: string; name: string }[]) =>
           [...arr, ...arr]
-            .map((f) => `<span class="marquee-item">${f}</span>`)
+            .map(
+              (f) =>
+                `<span class="marquee-item" data-font-file="${f.file}" style="font-family: 'FP_${f.name}', sans-serif">${f.name}</span>`,
+            )
             .join("");
         row1.innerHTML = makeItems(row1Fonts);
         row2.innerHTML = makeItems(row2Fonts);
+
+        // Lazy-load fonts via IntersectionObserver
+        const loadedFonts = new Set<string>();
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              const el = entry.target as HTMLElement;
+              const file = el.dataset.fontFile;
+              if (!file || loadedFonts.has(file)) continue;
+              loadedFonts.add(file);
+              const name = file.replace(/\.(ttf|otf|woff2?)$/i, "");
+              const face = new FontFace(
+                `FP_${name}`,
+                `url('${FONT_BASE}${encodeURIComponent(file)}')`,
+              );
+              face
+                .load()
+                .then(() => document.fonts.add(face))
+                .catch(() => {});
+            }
+          },
+          { rootMargin: "200px" },
+        );
+        document
+          .querySelectorAll(".marquee-item[data-font-file]")
+          .forEach((el) => observer.observe(el));
       } catch (err) {
         numberEl.textContent = "—";
         console.error("Font fetch error:", err);

@@ -30,7 +30,7 @@
     "message": "모든 탭 새로고침"
   },
   "Request": {
-    "message": "다른 폰트 요청이 있나요? <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> 또는 <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>에서 지원해주세요!"
+    "message": "다른 폰트 요청이 있나요? <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>에서 지원해주세요!"
   },
   "AddCurrentDomain": {
     "message": "현재 도메인을 무시 목록에 추가"

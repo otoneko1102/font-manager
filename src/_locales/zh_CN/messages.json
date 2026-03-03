@@ -30,7 +30,7 @@
     "message": "重新加载所有标签页"
   },
   "Request": {
-    "message": "还有其他字体请求吗？请在<a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>或<a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>上支持！"
+    "message": "还有其他字体请求吗？请在<a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>上支持！"
   },
   "AddCurrentDomain": {
     "message": "将当前域名添加到忽略列表"

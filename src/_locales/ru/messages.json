@@ -30,7 +30,7 @@
     "message": "Перезагрузить все вкладки"
   },
   "Request": {
-    "message": "Есть другие запросы на шрифты? Поддержите нас на <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> или <a href=\"https://discord.gg/yKW8wWKCnS\" target=\"_blank\">Discord</a>!"
+    "message": "Есть другие запросы на шрифты? Поддержите нас на <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>!"
   },
   "AddCurrentDomain": {
     "message": "Добавить текущий домен в список игнорирования"

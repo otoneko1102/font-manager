@@ -1,4 +1,4 @@
-import { decodePunycodeDomain, isDomainIgnored, arrayBufferToBase64, fontNameFromFile } from "./utils";
+import { decodePunycodeDomain, isDomainIgnored, arrayBufferToBase64, base64ToArrayBuffer, fontNameFromFile } from "./utils";
 import type { DownloadStatus } from "./types";
 import "./language";
 
@@ -94,12 +94,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     fontSelect.innerHTML = "";
 
+    // Helper: load a font from storage and apply to an element
+    function applyFontPreview(storageKey: string, fontId: string, el: HTMLElement): void {
+      chrome.storage.local.get(storageKey, (fontData) => {
+        const base64 = fontData[storageKey] as string | undefined;
+        if (!base64) return;
+        const buffer = base64ToArrayBuffer(base64);
+        const face = new FontFace(fontId, buffer);
+        face.load().then(() => {
+          document.fonts.add(face);
+          el.style.fontFamily = `'${fontId}', sans-serif`;
+        }).catch(() => {});
+      });
+    }
+
     // Add custom fonts at the top
     for (const name of customFonts) {
       const option = document.createElement("option");
       option.value = `custom:${name}`;
       option.textContent = `⭐ ${name}`;
       fontSelect.appendChild(option);
+      applyFontPreview(`customFont_${name}`, `FP_c_${name}`, option);
     }
 
     // Add separator if both custom and available exist
@@ -118,12 +133,26 @@ document.addEventListener("DOMContentLoaded", async () => {
       option.textContent = isInstalled ? `${name} ✓` : `${name} ⬇`;
       if (!isInstalled) option.style.opacity = "0.6";
       fontSelect.appendChild(option);
+      if (isInstalled) {
+        applyFontPreview(`font_${name}`, `FP_${name}`, option);
+      }
     }
 
     fontSelect.value = selectedFont;
     if (!fontSelect.value && availableFonts.length > 0) {
       fontSelect.value = availableFonts[0];
     }
+
+    // Apply preview font to the select element itself
+    function updateSelectPreview(): void {
+      const selected = fontSelect.selectedOptions[0];
+      if (selected) {
+        fontSelect.style.fontFamily = selected.style.fontFamily || "";
+      }
+    }
+    fontSelect.addEventListener("change", updateSelectPreview);
+    // Delay to wait for font previews to load
+    setTimeout(updateSelectPreview, 300);
 
     chrome.storage.local.set({ selectedFont: fontSelect.value || selectedFont });
     updateDownloadStatus();
@@ -449,6 +478,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         const span = document.createElement("span");
         span.className = "custom-font-name";
         span.textContent = name;
+
+        // Apply font preview to custom font name
+        const storageKey = `customFont_${name}`;
+        chrome.storage.local.get(storageKey, (fontData) => {
+          const base64 = fontData[storageKey] as string | undefined;
+          if (!base64) return;
+          const buffer = base64ToArrayBuffer(base64);
+          const fontId = `FP_cl_${name}`;
+          const face = new FontFace(fontId, buffer);
+          face.load().then(() => {
+            document.fonts.add(face);
+            span.style.fontFamily = `'${fontId}', sans-serif`;
+          }).catch(() => {});
+        });
 
         const removeBtn = document.createElement("button");
         removeBtn.className = "remove-custom-btn";
