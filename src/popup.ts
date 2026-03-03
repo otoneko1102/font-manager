@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       el.textContent = `${name} ⏳`;
       if (loadedPreviewFonts.has(fontId)) {
         el.style.fontFamily = `'${fontId}', sans-serif`;
-        el.textContent = `${name} ⬇`;
+        el.textContent = `${name} ⬇  AaBbCc 123 あア`;
         if (el === fontSelect.selectedOptions[0]) {
           const sample = document.getElementById("font-preview-sample");
           if (sample) sample.style.fontFamily = `'${fontId}', sans-serif`;
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       face.load().then(() => {
         document.fonts.add(face);
         el.style.fontFamily = `'${fontId}', sans-serif`;
-        el.textContent = `${name} ⬇`;
+        el.textContent = `${name} ⬇  AaBbCc 123 あア`;
         if (el === fontSelect.selectedOptions[0]) {
           const sample = document.getElementById("font-preview-sample");
           if (sample) sample.style.fontFamily = `'${fontId}', sans-serif`;
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     for (const name of customFonts) {
       const option = document.createElement("option");
       option.value = `custom:${name}`;
-      option.textContent = `⭐ ${name}`;
+      option.textContent = `⭐ ${name}  AaBbCc 123 あア`;
       fontSelect.appendChild(option);
       applyFontPreview(`customFont_${name}`, `FP_c_${name}`, option);
     }
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const option = document.createElement("option");
       option.value = fontFile;
       const isInstalled = installedFonts.includes(name);
-      option.textContent = isInstalled ? `${name} ✓` : `${name} ⬇`;
+      option.textContent = isInstalled ? `${name} ✓  AaBbCc 123 あア` : `${name} ⬇`;
       if (!isInstalled) option.style.opacity = "0.6";
       fontSelect.appendChild(option);
       if (isInstalled) {

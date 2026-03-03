@@ -59,7 +59,7 @@ select, button, input {
 }
 
 select {
-  width: 280px;
+  width: 400px;
   background-color: #3c3c3c;
   color: #f4f4f4;
   border: 1px solid #0e016d;
