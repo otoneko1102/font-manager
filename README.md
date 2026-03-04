@@ -5,6 +5,7 @@
 | --- | --- |
 | JA / EN | CA / DE / ES / FR / IT / KO / PT_BR / PT_PT / RU / ZH_CN / ZH_TW |
 
+> [!Note]  
 > Other than English and Japanese, some translations may be incorrect as Google Translate or ChatGPT are used. For correction requests, visit [Issues](https://github.com/otoneko1102/font-manager/issues).
 
 ## Supported Fonts
