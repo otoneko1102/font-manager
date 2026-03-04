@@ -58,3 +58,25 @@ Please check at [Official Website](https://font-manager.commonjs.work/)
 ### Download
 - [Chrome Webstore](https://chromewebstore.google.com/detail/mgpehaaemcemgmipcaaclkkmhgllchho)
 - [GitHub Releases](https://github.com/otoneko1102/font-manager/releases)
+
+## Credits
+
+Fonts
+
+- https://fonts.google.com/
+- https://ja.fonts2u.com/
+- https://jp.maisfontes.com/
+- https://ux.getuploader.com/forbidden_font/download/1
+- https://booth.pm/ja/items/4647085
+- https://modi.jpn.org/
+- https://web-font-search.net/jf%E3%83%89%E3%83%83%E3%83%88%E6%9D%B1%E9%9B%B2%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF14/
+- https://font.sumomo.ne.jp/
+- https://fontmeme.com/jfont/kill-gothic-u-font/
+- https://koruri.github.io/
+- https://mejiro.andro.plus/
+- https://goodfreefonts.com/
+- https://github.com/xeji01/nothingfont
+- https://tanukifont.com/tanuki-permanent-marker/
+- https://tanukifont.com/
+- https://booth.pm/ja/items/5466077
+- 
