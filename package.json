@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run fonts && vite build",
-    "fonts": "npx tsx scripts/generate-fonts-json.ts",
+    "fonts": "tsx scripts/generate-fonts-json.ts",
     "docs:dev": "cd pages && astro dev",
     "docs:build": "cd pages && astro build"
   },
