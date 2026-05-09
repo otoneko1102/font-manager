@@ -30,7 +30,7 @@
     "message": "Alle Tabs neu laden"
   },
   "Request": {
-    "message": "Hast du weitere Schriftarten-Wünsche? Unterstütze uns auf <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>!"
+    "message": "Hast du weitere Schriftarten-Wünsche? Unterstütze uns auf <a href=\"https://github.com/otnc/font-manager/issues\" target=\"_blank\">GitHub</a>!"
   },
   "AddCurrentDomain": {
     "message": "Aktuelle Domain zur Ignorierliste hinzufügen"
