@@ -176,7 +176,7 @@ export const indexStrings: IndexStrings = {
   looking:
     "We are currently looking for fonts to be used in the extension. Suggestions are accepted on GitHub.",
   fontRequests:
-    'Any other font requests? Let us know on <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+    'Any other font requests? Let us know on <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
   fontCount: "Current number of registered fonts:",
   supportedLanguages: "Supported Languages",
   viewAllFonts: "View All Fonts →",
@@ -198,7 +198,7 @@ export const locales: Record<string, LocaleStrings> = {
       "The original font for this page is 'serif'. If it is displayed in a different font, the extension is working fine!",
     notWorking: "If it's not working, check 'Enable Extension'.",
     fontRequests:
-      'Any other font requests? Let us know on <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Any other font requests? Let us know on <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Current number of registered fonts:",
     viewAllFonts: "View All Fonts →",
     installFromStore: "Install from Chrome Web Store",
@@ -218,7 +218,7 @@ export const locales: Record<string, LocaleStrings> = {
     notWorking:
       "動作していない場合は、「拡張機能を有効化」をチェックしてください。",
     fontRequests:
-      '他に追加してほしいフォントはありますか？ <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> でリクエストを受け付けています！',
+      '他に追加してほしいフォントはありますか？ <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a> でリクエストを受け付けています！',
     fontCount: "現在登録されているフォント数:",
     viewAllFonts: "全フォント一覧を見る →",
     installFromStore: "Chrome ウェブストアからインストール",
@@ -236,7 +236,7 @@ export const locales: Record<string, LocaleStrings> = {
       "La tipografia original d'aquesta pàgina és 'serif'. Si es mostra d'una manera diferent, vol dir que l'extensió funciona correctament!",
     notWorking: "Si no funciona, comproveu si l'extensió està activada.",
     fontRequests:
-      'Voleu afegir altres tipografies? Feu una sol·licitud a <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Voleu afegir altres tipografies? Feu una sol·licitud a <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Nombre actual de tipografies registrades:",
     viewAllFonts: "Veure totes les tipografies →",
     installFromStore: "Instal·la des de Chrome Web Store",
@@ -255,7 +255,7 @@ export const locales: Record<string, LocaleStrings> = {
     notWorking:
       "Falls sie nicht funktioniert, überprüfen Sie bitte, ob die Erweiterung aktiviert ist.",
     fontRequests:
-      'Möchten Sie weitere Schriftarten hinzufügen? Erstellen Sie eine Anfrage auf <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Möchten Sie weitere Schriftarten hinzufügen? Erstellen Sie eine Anfrage auf <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Aktuelle Anzahl registrierter Schriftarten:",
     viewAllFonts: "Alle Schriftarten anzeigen →",
     installFromStore: "Im Chrome Web Store installieren",
@@ -273,7 +273,7 @@ export const locales: Record<string, LocaleStrings> = {
       "La fuente original de esta página es 'serif'. Si se muestra de manera diferente, ¡la extensión está funcionando correctamente!",
     notWorking: "Si no funciona, verifica que la extensión esté activada.",
     fontRequests:
-      '¿Quieres agregar otras fuentes? Haz una solicitud en <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      '¿Quieres agregar otras fuentes? Haz una solicitud en <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Número actual de fuentes registradas:",
     viewAllFonts: "Ver todas las fuentes →",
     installFromStore: "Instalar desde Chrome Web Store",
@@ -292,7 +292,7 @@ export const locales: Record<string, LocaleStrings> = {
     notWorking:
       "Si cela ne fonctionne pas, vérifiez que l'extension est activée.",
     fontRequests:
-      'Vous souhaitez ajouter d\'autres polices ? Faites une demande sur <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> !',
+      'Vous souhaitez ajouter d\'autres polices ? Faites une demande sur <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a> !',
     fontCount: "Nombre actuel de polices enregistrées :",
     viewAllFonts: "Voir toutes les polices →",
     installFromStore: "Installer depuis le Chrome Web Store",
@@ -310,7 +310,7 @@ export const locales: Record<string, LocaleStrings> = {
       "Il carattere originale di questa pagina è 'serif'. Se viene visualizzato in modo diverso, significa che l'estensione funziona correttamente!",
     notWorking: "Se non funziona, verifica che l'estensione sia attivata.",
     fontRequests:
-      'Vuoi aggiungere altri caratteri? Fai una richiesta su <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Vuoi aggiungere altri caratteri? Fai una richiesta su <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Numero attuale di caratteri registrati:",
     viewAllFonts: "Vedi tutti i caratteri →",
     installFromStore: "Installa dal Chrome Web Store",
@@ -328,7 +328,7 @@ export const locales: Record<string, LocaleStrings> = {
       "이 페이지의 기본 글꼴은 'serif'입니다. 다른 글꼴로 표시되면 확장 프로그램이 정상적으로 작동하는 것입니다!",
     notWorking: "작동하지 않는 경우 '확장 프로그램 활성화'를 확인하세요.",
     fontRequests:
-      '추가하고 싶은 글꼴이 있나요? <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>에서 요청하세요!',
+      '추가하고 싶은 글꼴이 있나요? <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>에서 요청하세요!',
     fontCount: "현재 등록된 글꼴 수:",
     viewAllFonts: "전체 글꼴 보기 →",
     installFromStore: "Chrome 웹 스토어에서 설치",
@@ -347,7 +347,7 @@ export const locales: Record<string, LocaleStrings> = {
     notWorking:
       "Se não estiver funcionando, verifique se a extensão está ativada.",
     fontRequests:
-      'Quer adicionar outras fontes? Faça uma solicitação no <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Quer adicionar outras fontes? Faça uma solicitação no <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Número atual de fontes registradas:",
     viewAllFonts: "Ver todas as fontes →",
     installFromStore: "Instalar da Chrome Web Store",
@@ -366,7 +366,7 @@ export const locales: Record<string, LocaleStrings> = {
     notWorking:
       "Se não estiver a funcionar, verifique se a extensão está ativada.",
     fontRequests:
-      'Quer adicionar outras fontes? Faça um pedido no <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Quer adicionar outras fontes? Faça um pedido no <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Número atual de fontes registadas:",
     viewAllFonts: "Ver todas as fontes →",
     installFromStore: "Instalar da Chrome Web Store",
@@ -384,7 +384,7 @@ export const locales: Record<string, LocaleStrings> = {
       "Оригинальный шрифт на этой странице — 'serif'. Если он отображается по-другому, значит расширение работает правильно!",
     notWorking: "Если не работает, проверьте, включено ли расширение.",
     fontRequests:
-      'Хотите добавить другие шрифты? Оставьте запрос на <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a>!',
+      'Хотите добавить другие шрифты? Оставьте запрос на <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a>!',
     fontCount: "Текущее количество зарегистрированных шрифтов:",
     viewAllFonts: "Все шрифты →",
     installFromStore: "Установить из Chrome Web Store",
@@ -402,7 +402,7 @@ export const locales: Record<string, LocaleStrings> = {
       "此页面的原始字体为 'serif'。如果显示为不同的字体，说明扩展程序运行正常！",
     notWorking: '如果未生效，请检查"启用扩展程序"。',
     fontRequests:
-      '有其他字体需求吗？请在 <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> 进行反馈！',
+      '有其他字体需求吗？请在 <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a> 进行反馈！',
     fontCount: "当前已注册的字体数量：",
     viewAllFonts: "查看所有字体 →",
     installFromStore: "从 Chrome 网上应用店安装",
@@ -416,7 +416,7 @@ export const locales: Record<string, LocaleStrings> = {
       "此頁面的原始字體為 'serif'。如果顯示為不同的字體，表示擴充功能運行正常！",
     notWorking: "如果無法生效，請檢查「啟用擴充功能」。",
     fontRequests:
-      '有其他字體需求嗎？請在 <a href="https://github.com/otoneko1102/font-manager/issues" target="_blank">GitHub</a> 進行回饋！',
+      '有其他字體需求嗎？請在 <a href="https://github.com/otnc/font-manager/issues" target="_blank">GitHub</a> 進行回饋！',
     fontCount: "目前已註冊的字體數量：",
     viewAllFonts: "查看所有字體 →",
     installFromStore: "從 Chrome 線上應用程式商店安裝",
