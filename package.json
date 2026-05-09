@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/otoneko1102/font-manager.git"
+    "url": "git+https://github.com/otnc/font-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/otoneko1102/font-manager/issues"
+    "url": "https://github.com/otnc/font-manager/issues"
   },
-  "homepage": "https://github.com/otoneko1102/font-manager#readme",
+  "homepage": "https://github.com/otnc/font-manager#readme",
   "license": "ISC",
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.3.0",
