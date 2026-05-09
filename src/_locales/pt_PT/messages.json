@@ -30,7 +30,7 @@
     "message": "Recarregar todos os separadores"
   },
   "Request": {
-    "message": "Tem outro pedido de fonte? Apoie-nos no <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>!"
+    "message": "Tem outro pedido de fonte? Apoie-nos no <a href=\"https://github.com/otnc/font-manager/issues\" target=\"_blank\">GitHub</a>!"
   },
   "AddCurrentDomain": {
     "message": "Adicionar o domínio atual à lista de ignorados"
