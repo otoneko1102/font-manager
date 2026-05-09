@@ -30,7 +30,7 @@
     "message": "Recharger tous les onglets"
   },
   "Request": {
-    "message": "Vous avez d'autres demandes de polices ? Soutenez-nous sur <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> !"
+    "message": "Vous avez d'autres demandes de polices ? Soutenez-nous sur <a href=\"https://github.com/otnc/font-manager/issues\" target=\"_blank\">GitHub</a> !"
   },
   "AddCurrentDomain": {
     "message": "Ajouter le domaine actuel à la liste des ignorés"
