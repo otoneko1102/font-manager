@@ -6,7 +6,7 @@
 | JA / EN | CA / DE / ES / FR / IT / KO / PT_BR / PT_PT / RU / ZH_CN / ZH_TW |
 
 > [!Note]  
-> Other than English and Japanese, some translations may be incorrect as Google Translate or ChatGPT are used. For correction requests, visit [Issues](https://github.com/otoneko1102/font-manager/issues) or [PR](https://github.com/otoneko1102/font-manager/pulls).
+> Other than English and Japanese, some translations may be incorrect as Google Translate or ChatGPT are used. For correction requests, visit [Issues](https://github.com/otnc/font-manager/issues) or [PR](https://github.com/otnc/font-manager/pulls).
 
 ## Supported Fonts
 Please check at [Official Website](https://font-manager.commonjs.work/)
@@ -49,7 +49,7 @@ Please check at [Official Website](https://font-manager.commonjs.work/)
 </details>
 
 <div style="text-align: center;">
-  <img src="https://github.com/otoneko1102/font-manager/blob/main/src/icons/128x128.png?raw=true" alt="Logo" style="display: block; width: auto; height: 128px;">
+  <img src="https://github.com/otnc/font-manager/blob/main/src/icons/128x128.png?raw=true" alt="Logo" style="display: block; width: auto; height: 128px;">
 </div>
 
 ### Teams
@@ -58,7 +58,7 @@ Please check at [Official Website](https://font-manager.commonjs.work/)
 
 ### Download
 - [Chrome Webstore](https://chromewebstore.google.com/detail/mgpehaaemcemgmipcaaclkkmhgllchho)
-- [GitHub Releases](https://github.com/otoneko1102/font-manager/releases)
+- [GitHub Releases](https://github.com/otnc/font-manager/releases)
 
 ## Credits
 
