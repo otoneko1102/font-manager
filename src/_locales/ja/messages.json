@@ -30,7 +30,7 @@
     "message": "すべてのタブを更新"
   },
   "Request": {
-    "message": "フォントのリクエストはありますか？ <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a> で対応します！"
+    "message": "フォントのリクエストはありますか？ <a href=\"https://github.com/otnc/font-manager/issues\" target=\"_blank\">GitHub</a> で対応します！"
   },
   "AddCurrentDomain": {
     "message": "現在のドメインを無視リストに追加"
