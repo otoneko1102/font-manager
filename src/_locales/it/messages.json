@@ -30,7 +30,7 @@
     "message": "Ricarica tutte le schede"
   },
   "Request": {
-    "message": "Hai altre richieste di caratteri? Supportaci su <a href=\"https://github.com/otoneko1102/font-manager/issues\" target=\"_blank\">GitHub</a>!"
+    "message": "Hai altre richieste di caratteri? Supportaci su <a href=\"https://github.com/otnc/font-manager/issues\" target=\"_blank\">GitHub</a>!"
   },
   "AddCurrentDomain": {
     "message": "Aggiungi il dominio attuale all'elenco ignorati"
